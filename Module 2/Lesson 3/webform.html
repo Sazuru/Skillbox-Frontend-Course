@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Форма.пээнжи</title>
+</head>
+
+<body>
+    <form action="post" method="get">
+        <h2>Отправка заявки на конференцию</h2>
+        <h3>Основные данные</h3>
+        <p><strong>* Фамилия, имя, отчество:</strong></p>
+        <p><input type="text" name="name" size="50" required></p>
+        <p><strong>Дата рождения:</strong></p>
+        <p><input type="text" name="date-of-birth" placeholder="дд.мм.гггг"></p>
+        <p><strong>Пол</strong></p>
+        <p><input type="radio" name="gender" value="male">Мужской</p>
+        <p><input type="radio" name="gender" value="female">Женский</p>
+        <h3>Данные для создания личного кабинета</h3>
+        <p><strong>* Адрес электронной почты:</strong></p>
+        <p><input type="email" name="e-mail" size="50" required></p>
+        <p><strong>* Пароль для создания личного кабинета:</strong></p>
+        <p><input type="password" name="password" size="50" required></p>
+        <p><strong>* Подтверждение пароля:</strong></p>
+        <p><input type="password" name="password" size="50" required></p>
+        <h3>Материалы для конференции</h3>
+        <p><strong>* Тема доклада:</strong></p>
+        <p><input type="text" name="theme" size="50" required></p>
+        <p><strong>* Тезисы доклада (не более 1000 символов):</strong></p>
+        <p><textarea name="thesis" id="thesis" cols="30" rows="10" required></textarea></p>
+        <p><strong>Файл презентации:</strong></p>
+        <input type="file" name="presentation-file">
+        <h3>Дополнительные опции</h3>
+        <p><input type="checkbox" name="options[]" value="room">Проживание в отеле<br>
+            <input type="checkbox" name="options[]" value="breakfast" checked>Завтрак<br>
+            <input type="checkbox" name="options[]" value="lunch">Обед<br>
+            <input type="checkbox" name="options[]" value="dinner">Ужин</p>
+        <hr>
+        <input type="submit" value="Отправить">
+        <hr>
+        <p>* Поля, отмеченные звёздочкой, обязательны для заполнения.</p>
+
+    </form>
+</body>
+
+</html>
