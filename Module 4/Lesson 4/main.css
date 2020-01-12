@@ -54,12 +54,12 @@ p {
   margin-bottom: 20px;
 }
 
-.upblock {
+.task-name {
   position: relative;
   border-bottom: 1px solid #f7f7f7;
 }
 
-.downblock {
+.task-description {
   font-size: 14px;
   color: #8993ad;
   padding: 10px 20px 40px 20px;
@@ -131,10 +131,13 @@ textarea {
   overflow: hidden;
 }
 
-.confirm {
+.task-confirm {
   outline: none;
   border: none;
   color: #fff;
   background-color: #2174fd;
   padding: 20px 54px;
+}
+.error {
+  border: 1px solid red !important;
 }
