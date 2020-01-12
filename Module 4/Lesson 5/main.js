@@ -54,7 +54,7 @@ $(document).ready(function() {
     $(this).toggleClass("rotate");
     $(this)
       .parents(".task-item")
-      .children(".downblock")
+      .children(".task-description")
       .toggle("hide");
   });
 });
