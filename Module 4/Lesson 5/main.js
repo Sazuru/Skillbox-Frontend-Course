@@ -55,6 +55,6 @@ $(document).ready(function() {
     $(this)
       .parents(".task-item")
       .children(".task-description")
-      .toggle("hide");
+      .toggle("slideToggle");
   });
 });
