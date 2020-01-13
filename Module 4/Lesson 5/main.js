@@ -57,4 +57,10 @@ $(document).ready(function() {
       .children(".task-description")
       .toggle("slideToggle");
   });
+  $(".off").on("click", function() {
+    $("body").addClass("stop-scrolling");
+  });
+  $(".on").on("click", function() {
+    $("body").removeClass("stop-scrolling");
+  });
 });

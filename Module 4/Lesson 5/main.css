@@ -5,6 +5,7 @@ body {
   padding: 0;
   min-width: 1000px;
   font-family: Arial;
+  height: 300vh;
 }
 
 h2 {
@@ -136,7 +137,23 @@ textarea {
   color: #fff;
   background-color: #2174fd;
   padding: 20px 54px;
+  margin-bottom: 10px;
+  width: 190px;
+}
+.scroll {
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #2174fd;
+  padding: 20px 54px;
+  margin-bottom: 10px;
+  width: 190px;
 }
 .error {
   border: 1px solid red !important;
+}
+.stop-scrolling {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
 }
