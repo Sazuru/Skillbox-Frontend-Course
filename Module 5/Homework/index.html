@@ -107,17 +107,22 @@
       <div class="central-top">
         <div class="column-center">
           <article class="hot-news">
-            <div class="hot-tags"><a href="#">/Политика</a></div>
-            <div class="hot-text">
+            <img
+              class="hot-news__image"
+              src="img/News/Crimea.png"
+              alt="Крепость Ласточкино Гнездо в Крыму"
+            />
+            <a class="hot-news__tags" href="#">/Политика</a>
+            <h3 class="hot-news__text">
               <a href=""
-                >В Крыму отреагировали на слова Кравчука о возврате
+                >В Крыму отреагировали на&nbsp;слова Кравчука о возврате
                 полуострова</a
               >
-            </div>
-            <div class="hot-props">
-              <div class="hot-date">19 Июня 2018</div>
-              <div class="hot-time">10:48</div>
-            </div>
+            </h3>
+            <time class="hot-news__props">
+              <span class="hot-news__date">19 Июня 2018</span>
+              <span class="hot-news__time">10:48</span>
+            </time>
           </article>
           <div class="latest-news">
             <article class="latest-news-item">
@@ -126,16 +131,18 @@
                 src="img/News/Navalny.png"
                 alt="Алексей Навальный на митинге"
               />
-              <h3 class="latest-news-text">
-                <a href="">
-                  Алексей Навальный объявил акцию против пенсионной реформы 1
-                  июля</a
-                >
-              </h3>
-              <div class="latest-news-item-props">
-                <a href="#">/Политика</a>
-                <time class="latest-news-time">10:45</time>
-                <span class="latest-news-comments-count">17</span>
+              <div class="news__text">
+                <h3 class="latest-news-text">
+                  <a href="">
+                    Алексей Навальный объявил акцию против пенсионной реформы 1
+                    июля</a
+                  >
+                </h3>
+                <div class="news-item-props">
+                  <a href="#">/Политика</a>
+                  <time class="news-time">10:45</time>
+                  <span class="news-comments-count">17</span>
+                </div>
               </div>
             </article>
             <article class="latest-news-item">
@@ -144,17 +151,18 @@
                 src="img/News/passports.png"
                 alt="Passports"
               />
-
-              <div class="latest-news-text">
-                <a href=""
-                  >Дума увеличила пошлины за выдачу загранпаспортов и
-                  водительских прав</a
-                >
-              </div>
-              <div class="latest-news-item-props">
-                <a href="#">/Общество</a>
-                <time class="latest-news-time">10:45</time>
-                <span class="latest-news-comments-count">17</span>
+              <div class="news__text">
+                <div class="latest-news-text">
+                  <a href=""
+                    >Дума увеличила пошлины за выдачу загранпаспортов и
+                    водительских прав</a
+                  >
+                </div>
+                <div class="news-item-props">
+                  <a href="#">/Общество</a>
+                  <time class="news-time">10:45</time>
+                  <span class="news-comments-count">17</span>
+                </div>
               </div>
             </article>
             <article class="latest-news-item">
@@ -163,13 +171,15 @@
                 src="img/News/youtube.png"
                 alt="Passports"
               />
-              <h3 class="latest-news-text">
-                <a href="">В России заработал стриминговый сервис YouTube</a>
-              </h3>
-              <div class="latest-news-item-props">
-                <a href="#">/Интернет</a>
-                <time class="latest-news-time">10:45</time>
-                <span class="latest-news-comments-count">17</span>
+              <div class="news__text">
+                <h3 class="latest-news-text">
+                  <a href="">В России заработал стриминговый сервис YouTube</a>
+                </h3>
+                <div class="news-item-props">
+                  <a href="#">/Интернет</a>
+                  <time class="news-time">10:45</time>
+                  <span class="news-comments-count">17</span>
+                </div>
               </div>
             </article>
             <article class="latest-news-item">
@@ -178,15 +188,17 @@
                 src="img/News/football.png"
                 alt="Passports"
               />
-              <h3 class="latest-news-text">
-                <a href=""
-                  >Кейн признан лучшим игроком матча ЧМ-2018 Тунис — Англия</a
-                >
-              </h3>
-              <div class="latest-news-item-props">
-                <a href="#">/Политика</a>
-                <time class="latest-news-time">10:45</time>
-                <span class="latest-news-comments-count">17</span>
+              <div class="news__text">
+                <h3 class="latest-news-text">
+                  <a href=""
+                    >Кейн признан лучшим игроком матча ЧМ-2018 Тунис — Англия</a
+                  >
+                </h3>
+                <div class="news-item-props">
+                  <a href="#">/Политика</a>
+                  <time class="news-time">10:45</time>
+                  <span class="news-comments-count">17</span>
+                </div>
               </div>
             </article>
           </div>
@@ -282,7 +294,7 @@
         </aside>
       </div>
       <section class="special-news">
-        <div class="fixed-container">
+        <div class="fix-container">
           <article class="hot-news-bottom">
             <div class="hot-tags"><a href="#">/Политика</a></div>
             <div class="hot-text">
@@ -300,7 +312,7 @@
               Трамп введет дополнительные пошлины на китайские товары
             </div>
           </article>
-          <div class="most-read-news">
+          <div class="most-read-news fix-container">
             <h2>Самые читаемые новости</h2>
             <div class="news-item">
               <div class="news-item-text">
@@ -344,7 +356,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="fixed-container">
+      <div class="fix-container">
         <div class="footer-col-left">
           <nav>
             <ul class="footer-menu section-1">
@@ -393,7 +405,7 @@
       </div>
     </footer>
     <div class="copyright">
-      <div class="fixed-container">
+      <div class="fix-container">
         <p class="copyright-text">
           © Новостное агентство, 2017-2018 все права защищены
         </p>
