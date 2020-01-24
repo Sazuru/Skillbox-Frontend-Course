@@ -104,6 +104,7 @@
     </header>
 
     <main class="central-container">
+      <div class="fix-container">
       <div class="central-top">
         <div class="column-center">
           <article class="hot-news">
@@ -293,27 +294,33 @@
           /></a>
         </aside>
       </div>
-      <section class="special-news">
-        <div class="fix-container">
-          <article class="hot-news-bottom">
-            <div class="hot-tags"><a href="#">/Политика</a></div>
-            <div class="hot-text">
+      <section class="news-special">
+          <article class="hot-news">
+            <img
+              class="hot-news__image"
+              src="img/News/China.png"
+              alt="Грузовик с контейнером"
+            />
+            <div class="hot-news__tags"><a href="#">/Политика</a></div>
+            <div class="hot-news__text">
               <a href=""
                 >Пекин обвинил Вашингтон в развязывании торговой войны</a
               >
             </div>
-            <div class="hot-props">
-              <div class="hot-date">19 Июня 2018</div>
-              <div class="hot-time">10:48</div>
+            <div class="hot-news__props">
+              <div class="hot-news__date">19 Июня 2018</div>
+              <div class="hot-news__time">10:48</div>
             </div>
-            <div class="hot-description">
+            <div class="hot-news__description">
               Министерство коммерции Китая заявило, что Пекин примет
               «качественные» и «количественные» меры, если президент США Дональд
               Трамп введет дополнительные пошлины на китайские товары
             </div>
           </article>
-          <div class="most-read-news fix-container">
-            <h2>Самые читаемые новости</h2>
+          <div class="news-most-read">
+            <h2 class="news-most-read__heading">
+              <a href="#"">Самые читаемые новости</a></h2>
+              <div class="news-item__list">
             <div class="news-item">
               <div class="news-item-text">
                 <a href=""
@@ -351,10 +358,12 @@
                 <div class="news-comments-count">17</div>
               </div>
             </div>
+            </div>
           </div>
-        </div>
       </section>
-    </main>
+      </div>
+      </main>
+      </div>
     <footer class="footer">
       <div class="fix-container">
         <div class="footer-col-left">

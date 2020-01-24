@@ -626,11 +626,9 @@ h2 {
 .central-top {
   display: flex;
   justify-content: space-between;
-  width: 1000px;
-  margin: 0 auto;
 }
 
-.central-top .hot-news {
+.hot-news {
   margin-bottom: 20px;
   padding-top: 113px;
   padding-bottom: 41px;
@@ -942,43 +940,57 @@ h2 {
   }
 }
 
-.special-news {
-  order: 4;
+.news-special {
+  display: flex;
 }
 
-.hot-news-bottom {
-  width: 590px;
-  height: 390px;
-  background: url("../img/News/China.png") no-repeat;
+.news-special .hot-news {
+  width: 75%;
 }
 
-.hot-description {
-  position: absolute;
+@media (max-width: 1000px) {
+  .news-special {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .news-special {
+    flex-direction: column;
+  }
+  .news-special .hot-news {
+    width: 100%;
+  }
+}
+
+.hot-news__description {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 0.875rem;
   color: #ffffff;
-  font-size: 14px;
-  padding-left: 20px;
-  top: 300px;
-  width: 530px;
+  line-height: 1.429em;
+  opacity: 0.7;
 }
 
-.most-read-news {
-  position: absolute;
-  top: 0;
-  margin-left: 590px;
-  width: 410px;
-  background: white;
-}
-
-.most-read-news .news-item-text {
+.news-most-read__heading {
+  margin: 0 0 28px 0;
+  padding: 23px 20px 23px 20px;
+  font-size: 1.25rem;
   font-weight: bold;
+  letter-spacing: -0.4px;
+  border-bottom: 1px solid #e5e5e5;
+  word-wrap: break-word;
 }
 
-.most-read-news .news-time {
-  left: 70px;
+.news-list {
+  margin: 0;
+  padding: 0;
 }
 
-.most-read-news .news-comments-count {
-  left: 130px;
+.news-item__list .news-item .news-item-text > a {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .footer {
