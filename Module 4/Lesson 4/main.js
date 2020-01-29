@@ -8,6 +8,16 @@ $(document).ready(function() {
   }
 
   $(".task-confirm").click(function() {
+    $(".task-item-title h3").each(function() {
+      if ($(this).text() == $("input").val()) {
+        // выводим ошибку о повторении задачи
+        $(".attention").show();
+        // обнуляем значения инпутов
+        $("input").val("");
+        $("textarea").val("");
+        return false;
+      }
+    });
     if ($("input").val() !== "" && $("textarea").val() !== "") {
       $("input").removeClass("error");
       $("textarea").removeClass("error");

@@ -136,3 +136,10 @@ textarea {
 .error {
   border: 1px solid red !important;
 }
+.attention {
+  position: absolute;
+  right: 40px;
+  color: red;
+  font-size: 12px;
+  display: none;
+}
