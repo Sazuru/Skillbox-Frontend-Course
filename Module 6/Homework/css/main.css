@@ -1,0 +1,235 @@
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v20-cyrillic_latin-regular.ttf"); /* IE9 Compat Modes */
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-cyrillic_latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v20-cyrillic_latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/roboto-v20-cyrillic_latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v20-cyrillic_latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto-v20-cyrillic_latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v20-cyrillic_latin-700.eot"); /* IE9 Compat Modes */
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/roboto-v20-cyrillic_latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v20-cyrillic_latin-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/roboto-v20-cyrillic_latin-700.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v20-cyrillic_latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto-v20-cyrillic_latin-700.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
+
+body.modal-active {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fix-container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5000;
+}
+
+.header-top {
+  max-width: calc(1250px - 40px);
+
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.header-top__flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-menu-button {
+  display: none;
+  width: 45px;
+  height: 32px;
+
+  background-image: url(../img/mobile-menu-icon.png);
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.header-menu__list {
+  max-width: 300px;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.header-menu__item {
+  position: relative;
+  display: inline-block;
+
+  margin-right: 35px;
+}
+.header-menu__item:last-child {
+  margin-right: 0;
+}
+
+.header-menu__link:hover {
+  color: #fc557c;
+  border-bottom: 1px solid #fc557c;
+}
+
+.header-menu__link:active {
+  color: #fc557cbb;
+  border-bottom: 1px solid #fc557cbb;
+}
+
+@media (max-width: 1070px) {
+  .header-top {
+    padding: 0 40px;
+  }
+  .header-menu {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: flex;
+  }
+}
+
+.contacts div {
+  display: inline-block;
+}
+
+.telephone {
+  font-size: 1.56rem;
+  font-family: "Roboto", sans-serif;
+  color: rgb(31, 31, 36);
+  font-weight: 700;
+  line-height: 2.16;
+
+  margin-right: 30px;
+}
+
+.callback-button {
+  width: 210px;
+  height: 45px;
+
+  position: relative;
+  top: -5px;
+
+  border-width: 1px;
+  border-color: rgb(248, 35, 112);
+  border-style: solid;
+
+  background-color: #fff;
+  color: #f53f4f;
+}
+
+.callback-button:active {
+  background-color: #f53f4f;
+  color: #fff;
+}
+.mobile-callback-button {
+  display: none;
+
+  height: 40px;
+  width: 40px;
+
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .header-top {
+    padding: 0 20px;
+  }
+
+  .telephone {
+    font-size: 1.13rem;
+    margin-right: 15px;
+  }
+
+  .callback-button {
+    display: none;
+  }
+  .mobile-callback-button {
+    display: inline-block;
+
+    background-image: url(../img/mobile-callback-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+  }
+}
