@@ -34,6 +34,24 @@
     /* Safari, Android, iOS */
       url("../fonts/roboto-v20-cyrillic_latin-700.svg#Roboto") format("svg"); /* Legacy iOS */
 }
+/* roboto-900 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto-v20-latin_cyrillic-900.eot"); /* IE9 Compat Modes */
+  src: local("Roboto Black"), local("Roboto-Black"),
+    url("../fonts/roboto-v20-latin_cyrillic-900.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v20-latin_cyrillic-900.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/roboto-v20-latin_cyrillic-900.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v20-latin_cyrillic-900.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto") format("svg"); /* Legacy iOS */
+}
 html {
   box-sizing: border-box;
 }
@@ -46,6 +64,7 @@ html {
 
 body {
   min-width: 320px;
+  max-width: 1920px;
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -66,6 +85,7 @@ a {
 }
 
 button {
+  padding: 0;
   border: none;
 }
 
@@ -232,4 +252,61 @@ button {
     background-size: cover;
     background-color: transparent;
   }
+}
+
+.main-top {
+  max-width: 1250px;
+  margin: 0 auto;
+  margin-top: 70px;
+
+  background-image: url(../img/main-top__photo-background.svg);
+  background-repeat: no-repeat;
+  background-position-x: 700px;
+  background-size: 80%;
+}
+
+.main-top__flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 40px;
+}
+
+.main-top__name {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1.308;
+
+  margin-top: -150px;
+  margin-bottom: -20px;
+}
+
+.main-top__about {
+  font-size: 1.56rem;
+  font-weight: 400;
+  line-height: 2.16;
+
+  padding-left: 2px;
+
+  color: #8993ad;
+}
+
+.main-top__learn-more {
+  width: 270px;
+  height: 60px;
+
+  background-color: #ff4e2e;
+
+  font-size: 1.13rem;
+  color: #fff;
+}
+.main-top__img {
+}
+
+.main-top__photo {
+  width: 435px;
+  z-index: 100;
+}
+.main-top__bubble {
 }
