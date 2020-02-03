@@ -1,57 +1,162 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Валентин Агеев</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-top">
-            <div class="header-top__flex-container fix-container">
-                <button class="mobile-menu-button" type="button">
-                </button>
-                <nav class="header-menu">
-                    <ul class="header-menu__list">
-                        <li class="header-menu__item">
-                            <a href="#" class="header-menu__link">Услуги</a>
-                        </li>
-                        <li class="header-menu__item">
-                            <a href="#" class="header-menu__link">Портфолио</a>
-                        </li>
-                        <li class="header-menu__item">
-                            <a href="#" class="header-menu__link">Стоимость</a>
-                        </li>
-                     </ul>
-                 </nav>
-        <div class="contacts">
+      <div class="header-top">
+        <div class="header-top__flex-container fix-container">
+          <button class="mobile-menu-button" type="button"></button>
+          <nav class="header-menu">
+            <ul class="header-menu__list">
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">Услуги</a>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">Портфолио</a>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">Стоимость</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contacts">
             <div class="telephone">+7 (921) 428-61-06</div>
             <button class="callback-button">Заказать звонок</button>
             <button class="mobile-callback-button"></button>
+          </div>
         </div>
-        </div>
+      </div>
     </header>
     <main>
-        <section class="main-top">
-            <div class="main-top__flex-container fix-container">
-                <div class="info">
-                    <h1 class="main-top__name">Валентин Агеев</h1>
-                    <h3 class="main-top__about">Frontend-разработчик и веб-верстальщик</h3>
-                    <button class="main-top__learn-more">Узнать больше</button>
-                </div>
-                <div class="main-top__img">
-                    <img class="main-top__photo" src="img/main-top__about-img.png" alt="My photo">
-                    <div class="main-top__bubble"></div>
-                </div>
-            </div>
-        </section>
-        <section></section>
-        <section></section>
-        <section></section>
+      <section class="main-about">
+        <div class="main-about__flex-container fix-container">
+          <div class="info">
+            <h1 class="main-about__name">Валентин Агеев</h1>
+            <h3 class="main-about__speciality">
+              Frontend-разработчик и веб-верстальщик
+            </h3>
+            <button class="main-about__learn-more">Узнать больше</button>
+          </div>
+          <img
+            class="main-about__photo"
+            src="img/main-about__photo-img1.png"
+            alt="My photo"
+          />
+        </div>
+      </section>
+      <section class="main-skills">
+        <div class="main-skills__flex-container fix-container">
+          <h2>Что я делаю</h2>
+          <ul class="main-skills__list">
+            <li class="main-skills__item">
+              <figure>
+                <img
+                  class="main-skills__image"
+                  src="img/main-skills__item1.png"
+                  alt="Верстка лендингов любой сложности"
+                />
+                <figcaption class="main-skills__description">
+                  Вёрстка лендинг&mdash;страниц и&nbsp;сайтов любой сложности
+                </figcaption>
+              </figure>
+            </li>
+            <li class="main-skills__item">
+              <figure>
+                <img
+                  class="main-skills__image"
+                  src="img/main-skills__item2.png"
+                  alt="Адаптивная верстка"
+                />
+                <figcaption class="main-skills__description">
+                  Адаптивная вёрстка под все браузеры и&nbsp;устройства
+                </figcaption>
+              </figure>
+            </li>
+            <li class="main-skills__item">
+              <figure>
+                <img
+                  class="main-skills__image"
+                  src="img/main-skills__item3.png"
+                  alt="Frontend-разработка"
+                />
+                <figcaption class="main-skills__description">
+                  Frontend&mdash;разработка и&nbsp;программирование
+                </figcaption>
+              </figure>
+            </li>
+            <li class="main-skills__item">
+              <figure>
+                <img
+                  class="main-skills__image"
+                  src="img/main-skills__item4.png"
+                  alt="Исправление и доработка верстки"
+                />
+                <figcaption class="main-skills__description">
+                  Исправление и&nbsp;доработка существующей вёрстки
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+          <button class="main-skills__pricing">Узнать стоимость</button>
+        </div>
+      </section>
+      <section class="main-works">
+        <div class="main-works__flex-container fix-container">
+          <h2>Примеры моих работ</h2>
+          <div class="main-works__examples">
+            <ul class="main-works__examples-list">
+              <button class="prev" style=""></button>
+              <li class="main-works__examples-item">
+                <figure>
+                  <img
+                    class="main-works__examples-image"
+                    src="img/main-works__examples-item1.png"
+                    alt="Сайт психолога Веры Антоновой"
+                  />
+                  <figcaption class="main-works__examples-description">
+                    Сайт психолога Веры Антоновой
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="main-works__examples-item">
+                <figure>
+                  <img
+                    class="main-works__examples-image"
+                    src="img/main-works__examples-item2.png"
+                    alt="Сайт магазина детской одежды"
+                  />
+                  <figcaption class="main-works__examples-description">
+                    Сайт магазина детской одежды
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="main-works__examples-item">
+                <figure>
+                  <img
+                    class="main-works__examples-image"
+                    src="img/main-works__examples-item3.png"
+                    alt="Сайт магазина «Рыболов»"
+                  />
+                  <figcaption class="main-works__examples-description">
+                    Сайт магазина «Рыболов»
+                  </figcaption>
+                </figure>
+              </li>
+              <button class="next" style=""></button>
+            </ul>
+          </div>
+          <button class="main-works__order">Заказать проект</button>
+        </div>
+      </section>
+      <section></section>
     </main>
     <footer></footer>
-</body>
+  </body>
 </html>
