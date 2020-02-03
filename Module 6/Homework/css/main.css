@@ -262,8 +262,21 @@ button {
   background-color: #fbfbfb;
   background-image: url(../img/main-about__photo-background.svg);
   background-repeat: no-repeat;
-  background-position-x: 700px;
-  background-size: 80%;
+  background-position-x: 880px;
+  background-size: 50%;
+}
+
+@media (max-width: 1400px) {
+  .main-about {
+    background-position-x: 750px;
+    background-size: 60%;
+  }
+}
+@media (max-width: 1250px) {
+  .main-about {
+    background-position-x: 600px;
+    background-size: 65%;
+  }
 }
 
 .main-about__flex-container {
@@ -301,6 +314,19 @@ button {
 
   font-size: 1.13rem;
   color: #fff;
+}
+@media (max-width: 1070px) {
+  .main-about__name {
+    font-size: 3.38rem;
+  }
+
+  .main-about__speciality {
+    font-size: 1.25rem;
+  }
+  .main-about__learn-more {
+    width: 320px;
+    height: 68px;
+  }
 }
 
 .main-about__photo {
@@ -383,16 +409,21 @@ h2 {
 }
 
 .main-skills__pricing {
-  height: 60px;
   width: 270px;
+  height: 60px;
 
   color: #fff;
   background-color: rgb(255, 78, 46);
 }
+@media (max-width: 1070px) {
+  .main-skills__pricing {
+    width: 320px;
+    height: 68px;
+  }
+}
 
 .main-works {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 40px;
 
   background-color: #fbfbfb;
 }
@@ -478,6 +509,13 @@ h2 {
   background-color: rgb(255, 78, 46);
 }
 
+@media (max-width: 1070px) {
+  .main-works__order {
+    width: 320px;
+    height: 68px;
+  }
+}
+
 .main-pricing {
   margin: 0 auto;
   padding-top: 100px;
@@ -510,6 +548,13 @@ h2 {
   color: #fff;
 }
 
+@media (max-width: 1220px) {
+  .main-pricing__flex-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 .main-pricing__service {
   font-size: 2.81rem;
   line-height: 1.333;
@@ -524,6 +569,11 @@ h2 {
 
   text-align: left;
 }
+@media (max-width: 1220px) {
+  .main-pricing__service-info {
+    font-size: 1.35rem;
+  }
+}
 
 .footer {
   max-width: calc(1250px - 40px);
@@ -531,6 +581,12 @@ h2 {
   padding: 0 20px;
   margin: 0 auto;
   margin-top: 100px;
+}
+
+@media (max-width: 1070px) {
+  .footer {
+    padding: 0 40px;
+  }
 }
 
 .footer__flex-container {
