@@ -171,6 +171,12 @@ button {
   margin-right: 30px;
 }
 
+@media (max-width: 600px) {
+  .header .telephone {
+    vertical-align: text-bottom;
+  }
+}
+
 .callback-button {
   width: 210px;
   height: 45px;
@@ -193,10 +199,6 @@ button {
 .mobile-callback-button {
   display: none;
 
-  height: 40px;
-  width: 40px;
-
-  vertical-align: middle;
   cursor: pointer;
 }
 
@@ -208,7 +210,7 @@ button {
   .telephone,
   .email {
     font-size: 1.13rem;
-    margin-right: 15px;
+    margin-right: 5px;
   }
 
   .callback-button {
@@ -216,11 +218,6 @@ button {
   }
   .mobile-callback-button {
     display: inline-block;
-
-    background-image: url(../img/mobile-callback-icon.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: transparent;
   }
 }
 
@@ -753,21 +750,19 @@ i {
 }
 
 .social-networks__list {
+  display: flex;
+  justify-content: space-around;
   padding-left: 0;
-  margin: 0 auto;
 }
 
 .social-networks__item {
   display: inline-block;
-  /* margin: 0 10px; */
 }
 
 .social-icon {
   background-image: url("../img/social-networks-sprite.png");
   width: 35px;
   height: 35px;
-
-  margin-right: 15px;
 }
 
 .vk {

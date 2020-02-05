@@ -27,6 +27,9 @@
   -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
 }
+.icofont-phone-circle:before {
+  content: "\efba";
+}
 .icofont-ui-call:before {
   content: "\ec46";
 }
