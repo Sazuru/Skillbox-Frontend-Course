@@ -134,6 +134,21 @@ h2 {
   padding-top: 40px;
 }
 
+.header-middle_mobile-fix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 62px;
+  z-index: 1000;
+
+  padding-bottom: 0;
+  padding-top: 0;
+  align-content: center;
+
+  background: none;
+  background-color: #ffffff;
+}
+
 @media (max-width: 1040px) {
   .header-middle {
     margin-left: 20px;
@@ -282,6 +297,18 @@ h2 {
   transition-duration: 0.3s;
 }
 
+.mobile-menu-button_open .mobile-menu-button__bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-menu-button_open .mobile-menu-button__bar:nth-child(2) {
+  display: none;
+}
+
+.mobile-menu-button_open .mobile-menu-button__bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 @media (max-width: 768px) {
   .mobile-menu__button {
     display: flex;
@@ -340,6 +367,100 @@ h2 {
   .current-city {
     display: none;
   }
+}
+
+/*--- city-change ---*/
+
+.city-change {
+  margin: 0;
+  padding: 40px;
+
+  background-color: #ffffff;
+  box-shadow: 0 5px 5px 0 #e5e5e5;
+}
+
+.city-change_open {
+  display: block;
+}
+
+.city-change_close {
+  display: none;
+}
+
+.city-change__list {
+  margin: 0;
+  padding: 0;
+  columns: 3;
+}
+
+.city-change__list-item {
+  list-style: none;
+  line-height: 1.5em;
+}
+
+.city-change__list-item:hover {
+  color: #0072bc;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .city-change__list {
+    columns: 2;
+  }
+}
+
+@media (max-width: 360px) {
+  .city-change {
+    padding: 25px;
+  }
+
+  .city-change__list {
+    columns: 1;
+  }
+}
+
+/*--- Close button ---*/
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.close-button__bar {
+  width: 20px;
+  height: 2px;
+  margin: 0;
+
+  background: #000000;
+  transition: 0.3s;
+}
+
+.close-button__bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.close-button__bar:nth-child(2) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+.close-button:hover .close-button__bar:nth-child(1) {
+  transform: translateY(9px) rotate(135deg);
+}
+
+.close-button:hover .close-button__bar:nth-child(2) {
+  transform: translateY(-9px) rotate(45deg);
 }
 
 @media (max-width: 768px) {

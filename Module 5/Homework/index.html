@@ -6,6 +6,7 @@
     <title>Новостное агенство</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -23,21 +24,40 @@
         </div>
       </div>
 
-      <div class="header-middle fix-container">
-        <button class="mobile-menu__button" type="button">
+      <div class="header-middle js-header-middle fix-container">
+        <button class="mobile-menu__button js-mobile-menu-button" type="button">
           <span class="mobile-menu__button__bar"></span>
           <span class="mobile-menu__button__bar"></span>
           <span class="mobile-menu__button__bar"></span>
         </button>
-        <img class="header__logo" src="img/logo.png" alt="News logo" />
+        <img
+          class="header__logo js-header-logo"
+          src="img/logo.png"
+          alt="News logo"
+        />
         <img
           class="header__logo__mobile"
           src="img/mobNewsLogo.jpg"
           alt="News logo"
         />
-        <a class="current-city" href="#">
-          <span class="current-city__text">Москва</span>
+        <a class="current-city js-current-city" href="#">
+          <span class="current-city__text js-current-city__text">Москва</span>
         </a>
+        <div id="city-change" class="city-change js-city-change modal city-change_close" aria-modal="false">
+        <ul class="city-change__list">
+          <li class="city-change__list-item" data-city="Москва">Москва</li>
+          <li class="city-change__list-item" data-city="Санкт-Петербург">Санкт-Петербург</li>
+          <li class="city-change__list-item" data-city="Самара">Самара</li>
+          <li class="city-change__list-item" data-city="Казань">Казань</li>
+          <li class="city-change__list-item" data-city="Нижний Новгород">Нижний Новгород</li>
+          <li class="city-change__list-item" data-city="Ростов-на-Дону">Ростов-на-Дону</li>
+        </ul>
+
+        <button class="close-button js-close-button" type="button" aria-label="Закрыть окно выбора городов" aria-expanded="false" aria-controls="city-change">
+          <span class="close-button__bar"></span>
+          <span class="close-button__bar"></span>
+        </button>
+      </div>
 
         <time class="datetime" datetime="2019-06-19T10:48:00">
           <span class="datetime__date">19 июня, вторник</span>
@@ -62,7 +82,7 @@
         </form>
       </div>
 
-      <nav class="header-bottom header-menu fix-container">
+      <nav class="header-bottom header-menu js-header-menu fix-container">
         <ul class="header-menu__list">
           <li class="header-menu__item">
             <a class="header-menu__link" href="#">Главная</a>
@@ -458,5 +478,8 @@
         </div>
       </div>
     </footer>
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/city-change.js"></script>
   </body>
 </html>
