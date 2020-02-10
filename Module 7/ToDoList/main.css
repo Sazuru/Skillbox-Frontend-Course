@@ -1,0 +1,145 @@
+html,
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  min-width: 1000px;
+  font-family: Arial;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-weight: normal;
+  margin: 0;
+  padding: 18px 21px;
+  font-size: 16px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  word-break: break-word;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+
+.task-list {
+  width: 470px;
+  float: left;
+}
+
+.empty-item {
+  margin-top: 87px;
+  color: #8993ad;
+  display: block;
+}
+
+.task-list-title,
+.task-add-title {
+  margin: 65px 0 30px 0;
+}
+
+.task-item {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.task-name {
+  position: relative;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.task-description {
+  font-size: 14px;
+  color: #8993ad;
+  padding: 10px 20px 40px 20px;
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.task-item-title,
+h3 {
+  display: inline-block;
+}
+
+.close-task-item {
+  display: inline-block;
+  cursor: pointer;
+  width: 9px;
+  height: 9px;
+  background: url(img/clear-button.png) center center no-repeat;
+}
+
+.hide-task-item {
+  position: absolute;
+  transition: transform 0.5s;
+  right: 20px;
+  top: 50%;
+  display: inline-block;
+  cursor: pointer;
+  width: 9px;
+  height: 9px;
+  background: url(img/arrow.png) center center no-repeat;
+}
+
+.task-add {
+  width: 470px;
+  float: right;
+}
+
+.task-add-menu {
+  position: relative;
+  background-color: #fff;
+  padding: 47px 40px;
+}
+
+.task-add-menu label {
+  font-size: 14px;
+  color: #8993ad;
+  display: block;
+  margin-bottom: 11px;
+}
+
+.task-add-menu input,
+textarea {
+  display: block;
+  width: 360px;
+  resize: none;
+  outline: none;
+  margin-bottom: 28px;
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border: 1px solid #ebebeb;
+  overflow: hidden;
+}
+
+.task-confirm {
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #2174fd;
+  padding: 20px 54px;
+}
+.error {
+  border: 1px solid red !important;
+}
+.attention {
+  position: absolute;
+  right: 40px;
+  color: red;
+  font-size: 12px;
+  display: none;
+}
