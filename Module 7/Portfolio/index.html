@@ -42,6 +42,83 @@
           </div>
         </div>
       </div>
+      <div id="popup-windows">
+        <i
+          id="popup_bg"
+          onclick="document.body.style.overflow = 'auto'; $(this).fadeOut('fast'); $('#popup-recall').fadeOut('fast'); $('#popup-chat').fadeOut('fast');"
+          style="display: none"
+        ></i>
+        <dialog class="popup" id="popup-recall" style="display: none">
+          <i
+            class="icofont-ui-close close"
+            tabindex="0"
+            onkeyup="if (event.code == 'Enter' || event.code == 'Space') { document.body.style.overflow = 'auto'; $('#popup-recall').fadeOut('fast'); $('#popup_bg').fadeOut('fast'); }"
+            onclick="document.body.style.overflow = 'auto'; $('#popup-recall').fadeOut('fast'); $('#popup_bg').fadeOut('fast');"
+          ></i>
+          <form action="" method="GET" class="popup-content">
+            <label for="form-recall_name-input">Ваше имя:</label>
+            <input
+              type="text"
+              id="form-recall_name-input"
+              class="input name"
+              name="name"
+              placeholder="Имя"
+              required
+            />
+            <label for="form-recall_phone-input">Телефон:</label>
+            <input
+              type="tel"
+              id="form-recall_phone-input"
+              class="input phone-number"
+              name="phone"
+              placeholder="+7 (999) 999-99-99"
+              required
+            />
+            <button type="submit" class="send" id="button_send-recall">
+              Отправить
+            </button>
+          </form>
+        </dialog>
+        <dialog class="popup" id="popup-chat" style="display: none">
+          <i
+            class="icofont-ui-close close"
+            tabindex="0"
+            onkeyup="if (event.code == 'Enter' || event.code == 'Space') { $('#popup-chat').fadeOut('fast'); $('#popup_bg').fadeOut('fast'); document.body.style.overflow = 'auto'; }"
+            onclick="$('#popup-chat').fadeOut('fast'); $('#popup_bg').fadeOut('fast'); document.body.style.overflow = 'auto';"
+          ></i>
+          <form action="" method="GET" class="popup-content">
+            <label for="form-chat_name-input">Имя:</label>
+            <input
+              type="text"
+              id="form-chat_name-input"
+              class="input name"
+              name="name"
+              placeholder="Имя"
+              required
+            />
+            <label for="form-chat_phone-input">Телефон:</label>
+            <input
+              type="tel"
+              id="form-chat_phone-input"
+              class="input phone-number"
+              name="phone"
+              placeholder="+7 (999) 999-99-99"
+              required
+            />
+            <label for="form-chat_email-input">Почта:</label>
+            <input
+              type="email"
+              id="form-chat_email-input"
+              class="input email"
+              name="email"
+              placeholder="example@gmail.com"
+            />
+            <button type="submit" class="send" id="button_send-chat">
+              Отправить
+            </button>
+          </form>
+        </dialog>
+      </div>
     </header>
     <main>
       <section class="main-about">
@@ -120,7 +197,9 @@
               </figure>
             </li>
           </ul>
-          <button class="main-skills__pricing">Узнать стоимость</button>
+          <button class="main-skills__pricing button-buy">
+            Узнать стоимость
+          </button>
         </div>
       </section>
       <section id="works" class="main-works">
@@ -144,13 +223,14 @@
               Сайт "Новостое агенство"
             </div>
           </div>
-          <button class="main-works__order">Заказать проект</button>
+          <button class="main-works__order button-buy">Заказать проект</button>
         </div>
       </section>
       <section id="price" class="main-pricing">
         <div class="flat-elements-bottom">
+          <span>{&nbsp;}</span>
           <span>&lt;/&gt;</span>
-          <span>&lt;span&gt;</span>
+          <span>&lt;div&gt;</span>
           <span>{&nbsp;}</span>
           <span>#</span>
         </div>

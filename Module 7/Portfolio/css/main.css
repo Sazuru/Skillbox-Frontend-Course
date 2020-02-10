@@ -83,6 +83,8 @@ a {
 button {
   padding: 0;
   border: none;
+
+  cursor: pointer;
 }
 
 .fix-container {
@@ -220,6 +222,96 @@ button {
   }
 }
 
+#popup-windows {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transform: initial;
+}
+
+#popup_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  transform: initial;
+}
+
+.popup {
+  display: inline-block;
+  position: fixed;
+  top: 10%;
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  background: #ffffff;
+  z-index: 100;
+  border-radius: 3px;
+  box-shadow: 0 3px 10px -3px #333;
+  border: 0;
+  padding: 0;
+}
+
+.popup-content {
+  padding: 25px 10px 10px 10px;
+  transform: initial;
+}
+
+.input {
+  width: calc(100% - 30px);
+  color: #000;
+  background: #f5f5f5;
+  padding: 10px 15px;
+  margin: 10px 0 10px 0;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+p {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.send {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background: #ff543a;
+  padding: 10px 15px;
+  margin: 10px 0 0px 0;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.send:focus,
+.send:active,
+.close:focus,
+.close:active {
+  outline: none;
+  box-shadow: 0 0 2px 1px #f12f9f;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.close:hover {
+  text-shadow: 0 2px 5px #bdbdbd;
+  color: #ff543a;
+}
+
 .main-about {
   margin: 0 auto;
   margin-top: 70px;
@@ -333,20 +425,24 @@ button {
     font-size: 30px;
   }
   .flat-elements-bottom span:nth-child(1) {
-    transform: translate(-700px, 132px) rotate(30deg);
-    font-size: 20px;
+    transform: translate(-700px, 0px) rotate(30deg);
+    font-size: 40px;
   }
   .flat-elements-bottom span:nth-child(2) {
-    transform: translate(500px, 300px) rotate(-10deg);
-    font-size: 20px;
+    transform: translate(600px, 0px) rotate(-20deg);
+    font-size: 30px;
   }
   .flat-elements-bottom span:nth-child(3) {
-    transform: translate(396px, 35px) rotate(10deg);
+    transform: translate(420px, 270px) rotate(20deg);
     font-size: 30px;
   }
   .flat-elements-bottom span:nth-child(4) {
-    transform: translate(-550px, 245px) rotate(-20deg);
+    transform: translate(650px, 245px) rotate(-20deg);
     font-size: 40px;
+  }
+  .flat-elements-bottom span:nth-child(5) {
+    transform: translate(-700px, 250px) rotate(20deg);
+    font-size: 50px;
   }
 }
 
@@ -365,7 +461,6 @@ button {
   }
   .flat-elements-top span:nth-child(4) {
     transform: translate(0px, 200px) rotate(-30deg);
-
     font-size: 40px;
   }
   .flat-elements-top span:nth-child(5) {
@@ -373,20 +468,24 @@ button {
     font-size: 30px;
   }
   .flat-elements-bottom span:nth-child(1) {
-    transform: translate(-420px, 40px) rotate(150deg);
-    font-size: 25px;
+    transform: translate(-550px, -70px) rotate(30deg);
+    font-size: 40px;
   }
   .flat-elements-bottom span:nth-child(2) {
-    transform: translate(330px, 300px) rotate(-10deg);
+    transform: translate(400px, -35px) rotate(-20deg);
     font-size: 30px;
   }
   .flat-elements-bottom span:nth-child(3) {
-    transform: translate(396px, 35px) rotate(10deg);
+    transform: translate(420px, 270px) rotate(20deg);
     font-size: 30px;
   }
   .flat-elements-bottom span:nth-child(4) {
-    transform: translate(-530px, 285px) rotate(-20deg);
+    transform: translate(0px, 245px) rotate(-20deg);
     font-size: 40px;
+  }
+  .flat-elements-bottom span:nth-child(5) {
+    transform: translate(-500px, 250px) rotate(20deg);
+    font-size: 50px;
   }
 }
 
@@ -414,20 +513,22 @@ button {
     font-size: 30px;
   }
   .flat-elements-bottom span:nth-child(1) {
-    transform: translate(-420px, 40px) rotate(150deg);
-    font-size: 25px;
+    transform: translate(-350px, -50px) rotate(30deg);
+    font-size: 35px;
   }
   .flat-elements-bottom span:nth-child(2) {
-    transform: translate(300px, 220px) rotate(20deg);
-    font-size: 30px;
+    transform: translate(300px, 220px) rotate(150deg);
+    font-size: 40px;
   }
   .flat-elements-bottom span:nth-child(3) {
-    transform: translate(396px, 35px) rotate(10deg);
+    transform: translate(-50px, 275px) rotate(10deg);
     font-size: 30px;
   }
   .flat-elements-bottom span:nth-child(4) {
-    transform: translate(-530px, 285px) rotate(-20deg);
-    font-size: 40px;
+    display: none;
+  }
+  .flat-elements-bottom span:nth-child(5) {
+    display: none;
   }
 }
 
@@ -454,14 +555,14 @@ button {
   }
 
   .flat-elements-bottom span:nth-child(1) {
-    transform: translate(-400px, 420px) rotate(150deg);
+    transform: translate(-300px, 350px) rotate(150deg);
     font-size: 25px;
   }
   .flat-elements-bottom span:nth-child(2) {
     display: none;
   }
   .flat-elements-bottom span:nth-child(3) {
-    transform: translate(250px, 35px) rotate(10deg);
+    transform: translate(150px, -30px) rotate(20deg);
     font-size: 30px;
   }
   .flat-elements-bottom span:nth-child(4) {
@@ -491,11 +592,27 @@ button {
   .flat-elements-top span:nth-child(5) {
     display: none;
   }
-}
-
-@media (max-width: 599px) {
   .flat-elements-bottom {
     display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .flat-elements-top span:nth-child(1) {
+    transform: translate(-130px, 50px) rotate(30deg);
+    font-size: 20px;
+  }
+  .flat-elements-top span:nth-child(2) {
+    transform: translate(-150px, 170px) rotate(-20deg);
+    font-size: 20px;
+  }
+  .flat-elements-top span:nth-child(3) {
+    transform: translate(20px, 0px) rotate(-10deg);
+    font-size: 15px;
+  }
+  .flat-elements-top span:nth-child(4) {
+    transform: translate(80px, 50px) rotate(30deg);
+    font-size: 15px;
   }
 }
 
@@ -946,6 +1063,10 @@ h2 {
   padding: 0;
 
   list-style-type: none;
+}
+
+.footer-menu__item > a:hover {
+  color: rgb(97, 100, 107);
 }
 
 .footer-contacts > .telephone,

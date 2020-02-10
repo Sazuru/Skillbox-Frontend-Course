@@ -8,6 +8,7 @@
 @font-face {
   font-family: IcoFont;
   font-weight: 400;
+  font-style: Regular;
   src: url(../fonts/icofont.woff2) format("woff2"),
     url(../fonts/icofont.woff) format("woff");
 }
@@ -34,6 +35,9 @@
 }
 .icofont-ui-message:before {
   content: "\ec67";
+}
+.icofont-ui-close:before {
+  content: "\ec4f";
 }
 .icofont-xs {
   font-size: 0.5em;
