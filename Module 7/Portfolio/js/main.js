@@ -49,27 +49,17 @@ $(document).ready(function() {
       return false;
     });
 
+    $(".main-about__learn-more").on("click", function() {
+      var target = $("#skills");
+      var pos = $(target).offset().top;
+      $("html, body").animate({ scrollTop: pos - 100 });
+    });
+
     var popupChat = $("#popup-chat");
     var popupRecall = $("#popup-recall");
     var popupBG = $("#popup_bg");
 
     $(".phone-number").mask("+7 (999) 999-99-99");
-
-    // включение мобильного меню
-    var menuList = $(".top-menu__list_menu");
-    $(menuList).click(function() {
-      if (menuList.css("height") != "0px") {
-        menuList.removeClass("show-mobile-menu");
-      }
-    });
-
-    $("#burger-menu").click(function() {
-      menuList.addClass("show-mobile-menu");
-    });
-
-    $(window).resize(function() {
-      menuList.removeClass("show-mobile-menu");
-    });
 
     //вызов модальных окон
     $(".callback-button").click(function() {
@@ -82,6 +72,16 @@ $(document).ready(function() {
       popupChat.fadeIn();
       popupBG.fadeIn();
       document.body.style.overflow = "hidden";
+    });
+
+    //Появление мобильного меню
+    $(".mobile-menu-button").click(function(e) {
+      e.preventDefault();
+      $(".mobile__menu").slideToggle();
+    });
+
+    $(window).resize(function() {
+      $(".mobile__menu").slideUp(0);
     });
 
     // валидация форм и отправка писем
