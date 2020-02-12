@@ -53,11 +53,19 @@ $(document).ready(function() {
 
     emptyTask();
   });
-
+  //удаление задачи
   $("body").on("click", ".close-task-item", function() {
     setTimeout(emptyTask, 300);
     $(this)
       .parents(".task-item")
       .remove();
+  });
+  //скрытие задачи
+  $("body").on("click", ".hide-task-item", function() {
+    $(this).toggleClass("rotate");
+    $(this)
+      .parents(".task-item")
+      .children(".task-description")
+      .toggle("hide");
   });
 });

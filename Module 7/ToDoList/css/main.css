@@ -80,7 +80,7 @@ h3 {
   cursor: pointer;
   width: 9px;
   height: 9px;
-  background: url(img/clear-button.png) center center no-repeat;
+  background: url(../img/clear-button.png) center center no-repeat;
 }
 
 .hide-task-item {
@@ -92,7 +92,7 @@ h3 {
   cursor: pointer;
   width: 9px;
   height: 9px;
-  background: url(img/arrow.png) center center no-repeat;
+  background: url(../img/arrow.png) center center no-repeat;
 }
 
 .task-add {
