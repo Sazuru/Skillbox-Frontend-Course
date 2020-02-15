@@ -1,17 +1,11 @@
+
+
 html,
 body {
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
-  min-width: 1000px;
   font-family: Arial;
-}
-
-h2 {
-  font-size: 21px;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
 }
 
 h3 {
@@ -21,26 +15,26 @@ h3 {
   font-size: 16px;
 }
 
-p {
-  margin: 0;
-  padding: 0;
-  word-break: break-word;
+@media(max-width: 768px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+
+.container>.row {
+  justify-content: space-around;
 }
 
 .empty-item {
-  margin-top: 87px;
-  color: #8993ad;
   display: block;
+  
+  margin-left: 2px;
+
+  color: #8993ad;
 }
 
 .task-list {
-  align-items: baseline;
-}
-
-.empty-item {
-  margin-top: 87px;
-  color: #8993ad;
-  display: block;
+  margin-top: 35px;
 }
 
 .task-list-title,
@@ -94,11 +88,6 @@ h3 {
   background: url(../img/arrow.png) center center no-repeat;
 }
 
-.task-name {
-  position: relative;
-  border-bottom: 1px solid #f7f7f7;
-}
-
 .task-description {
   font-size: 14px;
   color: #8993ad;
@@ -112,6 +101,7 @@ h3 {
 }
 
 .task-add-menu {
+  padding: 30px;
   background-color: #fff;
 }
 
@@ -133,17 +123,12 @@ textarea {
 #task-item__description {
   background-color: #f5f5f5;
   border: 1px solid #ebebeb;
-  resize: none;
 }
 #task-item__name:focus,
 #task-item__description:focus {
   background-color: #ffffff;
 }
 
-.task-item_size {
-  width: 80%;
-  margin: 0 auto;
-}
 .attention {
   position: absolute;
   right: 40px;

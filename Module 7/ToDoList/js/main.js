@@ -9,18 +9,19 @@ $(document).ready(function() {
 
   $(".task-confirm").click(function() {
     $(".task-item-title h3").each(function() {
-      if ($(this).text() == $("input").val()) {
+      if ($(this).text() == $("#task-item__name").val()) {
         // выводим ошибку о повторении задачи
         $(".attention").show();
         // обнуляем значения инпутов
-        $("input").val("");
-        $("textarea").val("");
+        $("#task-item__name").val("");
+        $("#task-item__description").val("");
         return false;
       }
     });
-    if ($("input").val() !== "" && $("textarea").val() !== "") {
-      $("input").removeClass("error");
-      $("textarea").removeClass("error");
+    if ($("#task-item__name").val() !== "" && $("#task-item__description").val() !== "") {
+      $("#task-item__name").removeClass("error");
+      $("#task-item__description").removeClass("error");
+      $(".attention").hide();
       var newTask = $(`
         <div class="task-item">
           <div class="task-name">
@@ -37,18 +38,18 @@ $(document).ready(function() {
       var title = $("<h3></h3>");
       var description = $("<p></p>");
 
-      title.text($("input").val());
-      description.text($("textarea").val());
+      title.text($("#task-item__name").val());
+      description.text($("#task-item__description").val());
 
       $(".task-list").append(newTask);
       $(".task-item-title:last").prepend(title);
       $(".task-description:last").prepend(description);
 
-      $("input").val("");
-      $("textarea").val("");
+      $("#task-item__name").val("");
+      $("#task-item__description").val("");
     } else {
-      $("input").addClass("error");
-      $("textarea").addClass("error");
+      $("#task-item__name").addClass("error");
+      $("#task-item__description").addClass("error");
     }
 
     emptyTask();

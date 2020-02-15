@@ -6,29 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Список дел</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- <link rel="stylesheet" href="css/main.css" /> -->
     <link rel="stylesheet" href="css/main-bootstrap.css" />
   </head>
   <body>
     <div class="container">
-      <div class="task-list row">
-        <div class="col-sm-7">
-          <!-- <div class="task-list"> -->
-          <div class="task-list-title">
-            <h2>Список дел:</h2>
-          </div>
-          <p class="empty-item">Список пуст...</p>
-          <!-- </div> -->
-        </div>
-        <div class="col-sm-5">
-          <div class="task-add">
-            <div class="task-add-title">
-              <h2>Добавить новое дело</h2>
+      <div class="row">
+          <div class="col task-list">
+            <div class="task-list-title">
+              <h2>Список дел:</h2>
             </div>
+            <p class="empty-item">Список пуст...</p>
+          </div>
+        <div class="col">
+          <div class="task-add">
+            <!-- <div class="task-add-title"> -->
+              <h2 class="task-add-title">Добавить новое дело</h2>
+            <!-- </div> -->
             <div class="task-add-menu">
               <div class="attention">Такая задача уже есть!</div>
               <form class="task-add__text">
-                <div class="form-group task-item_size">
+                <div class="form-group">
                   <label for="task-item__name">* Название</label>
                   <input
                     type="text"
@@ -37,19 +34,21 @@
                     class="form-control"
                   />
                 </div>
-                <div class="form-group task-item_size">
+                <div class="form-group">
                   <label for="task-item__description">* Описание</label>
                   <textarea
                     name="description"
                     id="task-item__description"
                     class="form-control"
-                    rows="5"
+                    rows="2"
                     maxlength="350"
                   ></textarea>
                 </div>
-                <button class="task-confirm btn btn-primary btn-block">
-                  Добавить дело
-                </button>
+                <input
+                  class="task-confirm btn btn-primary"
+                  type="button"
+                  value="Добавить дело"
+                />
               </form>
             </div>
           </div>
