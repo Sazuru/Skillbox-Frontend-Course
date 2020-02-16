@@ -446,12 +446,12 @@ p {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
-
+  /* 
   background: -o-linear-gradient(60deg, #f35c2c, #fa098f);
   background: linear-gradient(30deg, #f35c2c, #fa098f);
   background-clip: text;
   -webkit-background-clip: text;
-  /* -webkit-text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent; */
 
   color: #f53f4f;
 }
