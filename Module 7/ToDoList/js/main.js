@@ -18,7 +18,10 @@ $(document).ready(function() {
         return false;
       }
     });
-    if ($("#task-item__name").val() !== "" && $("#task-item__description").val() !== "") {
+    if (
+      $("#task-item__name").val() !== "" &&
+      $("#task-item__description").val() !== ""
+    ) {
       $("#task-item__name").removeClass("error");
       $("#task-item__description").removeClass("error");
       $(".attention").hide();
@@ -26,11 +29,11 @@ $(document).ready(function() {
         <div class="task-item">
           <div class="task-name">
             <div class="task-item-title">
+            </div>
               <div class="close-task-item">
               </div>
-            </div>
-                <div class="hide-task-item">
-                </div>
+              <div class="hide-task-item">
+              </div>
           </div>
           <div class="task-description">
           </div>

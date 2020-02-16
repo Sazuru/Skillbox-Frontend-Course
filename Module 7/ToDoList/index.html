@@ -11,17 +11,16 @@
   <body>
     <div class="container">
       <div class="row">
-          <div class="col task-list">
-            <div class="task-list-title">
-              <h2>Список дел:</h2>
-            </div>
-            <p class="empty-item">Список пуст...</p>
+        <div class="col task-list">
+          <div class="task-list-title">
+            <h2>Список дел:</h2>
           </div>
+          <p class="empty-item">Список пуст...</p>
+        </div>
+        <div class="w-100"></div>
         <div class="col">
           <div class="task-add">
-            <!-- <div class="task-add-title"> -->
-              <h2 class="task-add-title">Добавить новое дело</h2>
-            <!-- </div> -->
+            <h2 class="task-add-title">Добавить новое дело</h2>
             <div class="task-add-menu">
               <div class="attention">Такая задача уже есть!</div>
               <form class="task-add__text">
@@ -29,7 +28,7 @@
                   <label for="task-item__name">* Название</label>
                   <input
                     type="text"
-                    maxlength="40"
+                    maxlength="25"
                     id="task-item__name"
                     class="form-control"
                   />
@@ -40,8 +39,8 @@
                     name="description"
                     id="task-item__description"
                     class="form-control"
-                    rows="2"
-                    maxlength="350"
+                    rows="4"
+                    maxlength="250"
                   ></textarea>
                 </div>
                 <input
