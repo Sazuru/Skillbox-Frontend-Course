@@ -14,6 +14,54 @@
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
   </head>
   <body>
+    <div class="popup-callback">
+      <form method="get" class="popup-callback__form">
+        <h3>Оставьте свой номер и&nbsp;я&nbsp;Вам перезвоню</h3>
+        <input
+          type="text"
+          name="name"
+          id="callback__name"
+          maxlength="20"
+          placeholder="Имя"
+        />
+        <input
+          type="tel"
+          name="tel"
+          id="callback__tel"
+          maxlength="11"
+          placeholder="Телефон"
+        />
+        <button type="submit" class="popup-callback__submit">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+    <div class="popup-find-out-more">
+      <form method="get" class="popup-find-out-more__form">
+        <h3>Напишите мне, и&nbsp;я&nbsp;Вам отвечу в&nbsp;ближайшее время</h3>
+        <input
+          type="text"
+          name="name"
+          id="find-out-more__name"
+          maxlength="20"
+          placeholder="Имя"
+        />
+        <input
+          type="email"
+          name="mail"
+          id="find-out-more__mail"
+          placeholder="E-mail"
+        />
+        <textarea
+          name="find-out-more__question"
+          id="find-out-more__question"
+          placeholder="Ваш вопрос"
+        ></textarea>
+        <button type="submit" class="popup-find-out-more__submit">
+          Отправить
+        </button>
+      </form>
+    </div>
     <header>
       <div class="header">
         <div class="header__flex-container fix-container">
@@ -41,83 +89,6 @@
             ></a>
           </div>
         </div>
-      </div>
-      <div id="popup-windows">
-        <i
-          id="popup_bg"
-          onclick="document.body.style.overflow = 'auto'; $(this).fadeOut('fast'); $('#popup-recall').fadeOut('fast'); $('#popup-chat').fadeOut('fast');"
-          style="display: none"
-        ></i>
-        <dialog class="popup" id="popup-recall" style="display: none">
-          <i
-            class="icofont-ui-close close"
-            tabindex="0"
-            onkeyup="if (event.code == 'Enter' || event.code == 'Space') { document.body.style.overflow = 'auto'; $('#popup-recall').fadeOut('fast'); $('#popup_bg').fadeOut('fast'); }"
-            onclick="document.body.style.overflow = 'auto'; $('#popup-recall').fadeOut('fast'); $('#popup_bg').fadeOut('fast');"
-          ></i>
-          <form action="" method="GET" class="popup-content">
-            <label for="form-recall_name-input">Ваше имя:</label>
-            <input
-              type="text"
-              id="form-recall_name-input"
-              class="input name"
-              name="name"
-              placeholder="Имя"
-              required
-            />
-            <label for="form-recall_phone-input">Телефон:</label>
-            <input
-              type="tel"
-              id="form-recall_phone-input"
-              class="input phone-number"
-              name="phone"
-              placeholder="+7 (999) 999-99-99"
-              required
-            />
-            <button type="submit" class="send" id="button_send-recall">
-              Отправить
-            </button>
-          </form>
-        </dialog>
-        <dialog class="popup" id="popup-chat" style="display: none">
-          <i
-            class="icofont-ui-close close"
-            tabindex="0"
-            onkeyup="if (event.code == 'Enter' || event.code == 'Space') { $('#popup-chat').fadeOut('fast'); $('#popup_bg').fadeOut('fast'); document.body.style.overflow = 'auto'; }"
-            onclick="$('#popup-chat').fadeOut('fast'); $('#popup_bg').fadeOut('fast'); document.body.style.overflow = 'auto';"
-          ></i>
-          <form action="" method="GET" class="popup-content">
-            <label for="form-chat_name-input">Имя:</label>
-            <input
-              type="text"
-              id="form-chat_name-input"
-              class="input name"
-              name="name"
-              placeholder="Имя"
-              required
-            />
-            <label for="form-chat_phone-input">Телефон:</label>
-            <input
-              type="tel"
-              id="form-chat_phone-input"
-              class="input phone-number"
-              name="phone"
-              placeholder="+7 (999) 999-99-99"
-              required
-            />
-            <label for="form-chat_email-input">Почта:</label>
-            <input
-              type="email"
-              id="form-chat_email-input"
-              class="input email"
-              name="email"
-              placeholder="example@gmail.com"
-            />
-            <button type="submit" class="send" id="button_send-chat">
-              Отправить
-            </button>
-          </form>
-        </dialog>
       </div>
     </header>
     <nav class="mobile__menu">
