@@ -59,7 +59,7 @@ $(document).ready(function() {
       $(".mobile__menu").slideUp(0);
     });
   });
-  
+
   // popups
   $(".callback-button, .mobile-callback-button").click(function(e) {
     e.preventDefault();
@@ -80,7 +80,29 @@ $(document).ready(function() {
     }
   });
 
-  $(".popup-callback__submit, .popup-find-out-more__submit").click(function(e) {
-    e.preventDefault();
+  //Отправка данных
+  $(function() {
+    $("#recall").submit(function(e) {
+      e.preventDefault(); // отменяем поведение по умолчанию
+      var data = $(this).serialize(); // получаем все данные формы
+      console.log(data); // распечатываем их в консоль
+    });
+  });
+  //E-mail Ajax Send
+  $("#recall").submit(function() {
+    //Change
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "../mail.php", //Change
+      data: th.serialize(),
+    }).done(function() {
+      alert("Thank you!");
+      setTimeout(function() {
+        // Done Functions
+        th.trigger("reset");
+      }, 1000);
+    });
+    return false;
   });
 });

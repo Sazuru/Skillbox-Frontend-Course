@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Валентин Агеев</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/icofont.min.css" />
@@ -15,7 +17,12 @@
   </head>
   <body>
     <div class="popup-callback">
-      <form method="get" class="popup-callback__form">
+      <form id="recall" class="popup-callback__form">
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="Portfolio" />
+        <input type="hidden" name="admin_email" value="sazuru@gmail.com" />
+        <input type="hidden" name="form_subject" value="Обратный звонок" />
+        <!-- END Hidden Required Fields -->
         <h3>Оставьте свой номер и&nbsp;я&nbsp;Вам перезвоню</h3>
         <input
           type="text"
@@ -24,6 +31,7 @@
           maxlength="20"
           placeholder="Имя"
         />
+
         <input
           type="tel"
           name="tel"
@@ -31,13 +39,14 @@
           maxlength="11"
           placeholder="Телефон"
         />
-        <button type="submit" class="popup-callback__submit">
+        <button type="submit" id="submit" class="popup-callback__submit">
           Заказать звонок
         </button>
+        <span></span>
       </form>
     </div>
     <div class="popup-find-out-more">
-      <form method="get" class="popup-find-out-more__form">
+      <form method="post" class="popup-find-out-more__form">
         <h3>Напишите мне, и&nbsp;я&nbsp;Вам отвечу в&nbsp;ближайшее время</h3>
         <input
           type="text"
@@ -48,12 +57,12 @@
         />
         <input
           type="email"
-          name="mail"
-          id="find-out-more__mail"
+          name="email"
+          id="find-out-more__email"
           placeholder="E-mail"
         />
         <textarea
-          name="find-out-more__question"
+          name="question"
           id="find-out-more__question"
           placeholder="Ваш вопрос"
         ></textarea>
