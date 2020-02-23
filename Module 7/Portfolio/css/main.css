@@ -182,6 +182,28 @@ button {
   resize: none;
 }
 
+@media (max-width: 1070px) {
+  .popup-callback__form,
+  .popup-find-out-more__form {
+    width: 60%;
+  }
+}
+@media (max-width: 600px) {
+  .popup-callback__form input,
+  .popup-find-out-more__form input,
+  .popup-find-out-more textarea,
+  .popup-callback__submit,
+  .popup-find-out-more__submit {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .popup-callback__form,
+  .popup-find-out-more__form {
+    width: 90%;
+  }
+}
+
 .fix-container {
   max-width: 1250px;
   margin: 0 auto;
@@ -248,7 +270,7 @@ button {
 
 @media (max-width: 1070px) {
   .header {
-    padding: 0 40px;
+    padding: 20px 40px 0 40px;
   }
   .header-menu {
     display: none;
@@ -341,7 +363,7 @@ button {
 
 @media (max-width: 600px) {
   .header {
-    padding: 0 20px;
+    padding: 20px;
   }
 
   .top-menu__button_burger-menu {

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("ajax-loader.gif") center center no-repeat;
+  background: #fff url("../img/ajax-loader.gif") center center no-repeat;
 }
 
 /* Icons */
@@ -10,10 +10,10 @@
   font-weight: normal;
   font-style: normal;
 
-  src: url("../fontsslick.eot");
-  src: url("../slick_VGKH0i.eot?") format("embedded-opentype"),
-    url("slick.woff") format("woff"), url("slick.ttf") format("truetype"),
-    url("slick.svg") format("svg");
+  src: url("../fonts/fontsslick.eot");
+  src: url("../fonts/slick_VGKH0i.eot?") format("embedded-opentype"),
+    url("../fonts/slick.ttf") format("truetype"),
+    url("../fonts/slick.svg") format("svg");
 }
 /* Arrows */
 .slick-prev,
