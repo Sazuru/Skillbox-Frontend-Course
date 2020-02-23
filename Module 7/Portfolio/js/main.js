@@ -81,26 +81,21 @@ $(document).ready(function() {
   });
 
   //Отправка данных
-  $(function() {
-    $("#recall").submit(function(e) {
-      e.preventDefault(); // отменяем поведение по умолчанию
-      var data = $(this).serialize(); // получаем все данные формы
-      console.log(data); // распечатываем их в консоль
-    });
-  });
-  //E-mail Ajax Send
-  $("#recall").submit(function() {
+  $(".popup-callback__form, .popup-find-out-more__form").submit(function() {
     //Change
     var th = $(this);
     $.ajax({
       type: "POST",
-      url: "../mail.php", //Change
+      url: "mail.php", //Change
       data: th.serialize(),
     }).done(function() {
-      alert("Thank you!");
+      alert("Спасибо!");
       setTimeout(function() {
         // Done Functions
         th.trigger("reset");
+        $(".popup-callback").css("display", "none");
+        $(".popup-find-out-more").css("display", "none");
+        $("body").toggleClass("hidden");
       }, 1000);
     });
     return false;
