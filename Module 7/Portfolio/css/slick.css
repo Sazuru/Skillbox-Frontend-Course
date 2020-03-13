@@ -55,7 +55,7 @@
 .slick-track:after {
   display: table;
 
-  content: "";
+  content: '';
 }
 .slick-track:after {
   clear: both;
@@ -70,10 +70,9 @@
 
   height: 100%;
   min-height: 1px;
-  /*    только марджин добавила сюда*/
   margin: 0 10px;
 }
-[dir="rtl"] .slick-slide {
+[dir='rtl'] .slick-slide {
   float: right;
 }
 .slick-slide img {
@@ -97,5 +96,5 @@
   border: 1px solid transparent;
 }
 .slick-arrow.slick-hidden {
-  display: none;
+  display: block;
 }
