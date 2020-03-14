@@ -693,10 +693,10 @@ p {
 
 @media (max-width: 1400px) {
   .flat-elements-top .top-1 {
-    /* -webkit-transform: translate(-450px, 25px) rotate(30deg);
-    -ms-transform: translate(-450px, 25px) rotate(30deg);
-    transform: translate(-450px, 25px) rotate(30deg);
-    font-size: 50px; */
+    -webkit-transform: translate(-830px, 23px) rotate(28deg);
+    -ms-transform: translate(-830px, 23px) rotate(28deg);
+    transform: translate(-830px, 23px) rotate(28deg);
+    font-size: 46px;
   }
   .flat-elements-top .top-2 {
     -webkit-transform: translate(-712px, 254px) rotate(20deg);
@@ -898,27 +898,27 @@ p {
 
 @media (max-width: 500px) {
   .flat-elements-top .top-1 {
-    -webkit-transform: translate(-130px, 50px) rotate(30deg);
-    -ms-transform: translate(-130px, 50px) rotate(30deg);
-    transform: translate(-130px, 50px) rotate(30deg);
-    font-size: 20px;
+    -webkit-transform: translate(-111px, -9px) rotate(27deg);
+    -ms-transform: translate(-111px, -9px) rotate(27deg);
+    transform: translate(-111px, -9px) rotate(27deg);
+    font-size: 26px;
   }
   .flat-elements-top .top-2 {
-    -webkit-transform: translate(-150px, 170px) rotate(-20deg);
-    -ms-transform: translate(-150px, 170px) rotate(-20deg);
-    transform: translate(-150px, 170px) rotate(-20deg);
-    font-size: 20px;
+    -webkit-transform: translate(-123px, 97px) rotate(16deg);
+    -ms-transform: translate(-123px, 97px) rotate(16deg);
+    transform: translate(-123px, 97px) rotate(16deg);
+    font-size: 28px;
   }
   .flat-elements-top .top-3 {
-    -webkit-transform: translate(20px, 0px) rotate(-10deg);
-    -ms-transform: translate(20px, 0px) rotate(-10deg);
-    transform: translate(20px, 0px) rotate(-10deg);
-    font-size: 15px;
+    -webkit-transform: translate(14px, -27px) rotate(-32deg);
+    -ms-transform: translate(14px, -27px) rotate(-32deg);
+    transform: translate(14px, -27px) rotate(-32deg);
+    font-size: 18px;
   }
   .flat-elements-top .top-4 {
-    -webkit-transform: translate(80px, 50px) rotate(30deg);
-    -ms-transform: translate(80px, 50px) rotate(30deg);
-    transform: translate(80px, 50px) rotate(30deg);
+    -webkit-transform: translate(86px, 37px) rotate(22deg);
+    -ms-transform: translate(86px, 37px) rotate(22deg);
+    transform: translate(86px, 37px) rotate(22deg);
     font-size: 15px;
   }
 }
@@ -947,8 +947,8 @@ p {
 
     background-image: url(../img/main-about__photo-background.svg);
     background-repeat: no-repeat;
-    background-position-x: -50px;
-    background-position-y: 120px;
+    background-position-x: -26px;
+    background-position-y: 65px;
     background-size: 130%;
   }
 }
