@@ -1,19 +1,19 @@
 @charset "UTF-8";
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("../img/ajax-loader.gif") center center no-repeat;
+  background: #fff url('../img/ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
 @font-face {
-  font-family: "slick";
+  font-family: 'slick';
   font-weight: normal;
   font-style: normal;
 
-  src: url("../fonts/fontsslick.eot");
-  src: url("../fonts/slick_VGKH0i.eot?") format("embedded-opentype"),
-    url("../fonts/slick.ttf") format("truetype"),
-    url("../fonts/slick.svg") format("svg");
+  src: url('../fonts/fontsslick.eot');
+  src: url('../fonts/slick_VGKH0i.eot?') format('embedded-opentype'),
+    url('../fonts/slick.ttf') format('truetype'),
+    url('../fonts/slick.svg') format('svg');
 }
 /* Arrows */
 .slick-prev,
@@ -63,7 +63,7 @@
 
 .slick-prev:before,
 .slick-next:before {
-  font-family: "slick";
+  font-family: 'slick';
   font-size: 68px; /* было 20*/
   line-height: 1;
 
@@ -77,37 +77,37 @@
 .slick-prev {
   left: -25px;
 }
-[dir="rtl"] .slick-prev {
+[dir='rtl'] .slick-prev {
   right: -25px;
   left: auto;
 }
 .slick-prev:before {
-  content: "←";
+  content: '←';
   text-shadow: 0 0 2rem rgba(0, 0, 0, 0.08); /* тень у текста, т.к. стрелка тут - это текст*/
 }
-[dir="rtl"] .slick-prev:before {
-  content: "→";
+[dir='rtl'] .slick-prev:before {
+  content: '→';
 }
 
 .slick-next {
   right: -25px;
 }
-[dir="rtl"] .slick-next {
+[dir='rtl'] .slick-next {
   right: auto;
   left: -25px;
 }
 .slick-next:before {
-  content: "→";
+  content: '→';
   text-shadow: 0 0 2rem rgba(0, 0, 0, 0.08); /* повторяем тень для правой стрелки*/
 }
-[dir="rtl"] .slick-next:before {
-  content: "←";
+[dir='rtl'] .slick-next:before {
+  content: '←';
 }
 
 /* Dots */
-.slick-dotted.slick-slider {
+/* .slick-dotted.slick-slider {
   margin-bottom: 30px;
-}
+} */
 
 .slick-dots {
   position: absolute;
@@ -161,7 +161,7 @@
   opacity: 1;
 }
 .slick-dots li button:before {
-  font-family: "slick";
+  font-family: 'slick';
   font-size: 6px;
   line-height: 20px;
 
@@ -172,7 +172,7 @@
   width: 20px;
   height: 20px;
 
-  content: "•";
+  content: '•';
   text-align: center;
 
   opacity: 0.25;

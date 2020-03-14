@@ -4,13 +4,13 @@ $(document).ready(function() {
   $('.main-works__examples').slick({
     infinite: true,
     draggable: true,
+    autoplay: false,
+    dots: false,
     slidesToShow: 3,
     slidesToScroll: 4,
     speed: 300,
     slidesToScroll: 1,
-    autoplay: false,
     cssEase: 'ease-in-out',
-    dots: false,
     nextArrow: '<button class="next"></button>',
     prevArrow: '<button class="prev"></button>',
     responsive: [
