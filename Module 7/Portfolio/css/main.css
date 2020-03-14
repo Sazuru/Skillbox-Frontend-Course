@@ -79,6 +79,8 @@ h2 {
   font-size: 3.38rem;
   margin-top: 0;
   margin-bottom: 0;
+
+  text-align: center;
 }
 
 img {
@@ -262,6 +264,12 @@ button {
   cursor: pointer;
 }
 
+@media (max-width: 600px) {
+  .mobile-menu-button {
+    transform: scale(0.5);
+  }
+}
+
 .menu__list {
   max-width: 300px;
   margin: 0;
@@ -351,6 +359,10 @@ button {
 }
 
 @media (max-width: 600px) {
+  .header {
+    padding: 13px 10px;
+  }
+
   .header .telephone {
     vertical-align: text-bottom;
   }
@@ -386,36 +398,10 @@ button {
 }
 
 @media (max-width: 600px) {
-  .header {
-    padding: 20px;
-  }
-
-  .top-menu__button_burger-menu {
-    padding: 23px 10px 10px;
-  }
-
-  .top-menu__button_burger-menu > div:nth-child(1) {
-    margin: 5px 10px;
-    width: 25px;
-    height: 3px;
-  }
-
-  .top-menu__button_burger-menu > div:nth-child(2) {
-    margin: 5px 10px;
-    width: 25px;
-    height: 3px;
-  }
-
-  .top-menu__button_burger-menu > div:nth-child(3) {
-    margin: 5px 10px;
-    width: 25px;
-    height: 3px;
-  }
-
   .telephone,
   .email {
-    font-size: 1.13rem;
-    margin-right: 5px;
+    font-size: 1.25rem;
+    margin-right: 15px;
   }
 
   .header_callback-button {
@@ -1010,7 +996,7 @@ p {
     font-size: 2.81rem;
   }
   .main-about__speciality {
-    font-size: 1.13rem;
+    font-size: 1.05rem;
   }
 }
 
@@ -1036,12 +1022,13 @@ p {
     background-color: #fff;
   }
   .main-about__name {
-    margin-top: 20px;
-
+    margin-top: 11px;
+    margin-bottom: 5px;
     font-size: 1.88rem;
   }
   .main-about__speciality {
     text-align: center;
+    line-height: 1.5;
   }
   .button-buy {
     width: 280px;
@@ -1068,10 +1055,12 @@ p {
 
 @media (max-width: 600px) {
   .main-about__photo {
-    width: 55%;
+    width: 79%;
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1;
+
+    margin-top: 15px;
   }
 }
 
@@ -1084,7 +1073,7 @@ p {
 @media (max-width: 600px) {
   .main-skills {
     padding: 0 20px;
-    margin-top: 50px;
+    margin-top: 35px;
     margin-bottom: 50px;
   }
 }
@@ -1107,12 +1096,6 @@ p {
 
 .main-skills__name {
   margin-top: 10px;
-}
-
-@media (max-width: 1070px) {
-  .main-skills__name {
-    margin-right: 26px;
-  }
 }
 
 .main-skills__list {
@@ -1178,12 +1161,19 @@ p {
     flex-direction: column;
 
     padding-left: 0;
-    margin-top: 50px;
+    margin-top: 28px;
+    margin-bottom: 31px;
   }
 }
 
 .main-skills__image {
   padding-bottom: 17px;
+}
+
+@media (max-width: 320px) {
+  .main-skills__image {
+    max-width: 60px;
+  }
 }
 
 .main-skills__description {
@@ -1203,6 +1193,12 @@ p {
   padding: 100px 40px;
 
   background-color: #fbfbfb;
+}
+
+@media (max-width: 320px) {
+  .main-works {
+    padding: 45px 10px;
+  }
 }
 
 .main-works__flex-container {
@@ -1231,6 +1227,13 @@ p {
 @media (max-width: 1070px) {
   .main-works__examples {
     margin-bottom: 210px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-works__examples {
+    margin-top: 43px;
+    margin-bottom: 87px;
   }
 }
 
@@ -1352,7 +1355,7 @@ p {
   .main-pricing {
     padding: 0 20px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 42px;
   }
 }
 
@@ -1400,7 +1403,7 @@ p {
 
 .main-pricing__service {
   font-size: 2.81rem;
-  line-height: 1.333;
+  line-height: 1.4;
 
   text-align: left;
 }
@@ -1425,6 +1428,9 @@ p {
   }
   .main-pricing__service-info {
     font-size: 1rem;
+    line-height: 1.9;
+
+    margin-top: 35px;
   }
 }
 
@@ -1446,6 +1452,7 @@ p {
 @media (max-width: 600px) {
   .footer {
     padding: 0 20px;
+    margin-top: 40px;
   }
 }
 
@@ -1469,7 +1476,7 @@ p {
 }
 @media (max-width: 800px) {
   .footer {
-    margin-top: 50px;
+    margin-top: 41px;
   }
   .footer__flex-container {
     -ms-flex-wrap: wrap;
@@ -1477,6 +1484,9 @@ p {
   }
   .footer .menu {
     width: 50%;
+
+    font-size: 1rem;
+    line-height: 2;
   }
 }
 
@@ -1499,10 +1509,19 @@ p {
 .footer-contacts > .telephone,
 .email {
   font-weight: 400;
+  line-height: 2.389;
 
   margin-right: 0;
+}
 
-  line-height: 2.389;
+@media (max-width: 600px) {
+  .footer-contacts {
+    margin-top: 25px;
+  }
+  .footer-contacts > .telephone,
+  .email {
+    line-height: 2.2;
+  }
 }
 
 i {
@@ -1524,6 +1543,18 @@ i {
   color: #f53f4f;
 }
 
+@media (max-width: 600px) {
+  .footer_callback-button {
+    width: 280px;
+    height: 55px;
+
+    background-color: #ff4e2e;
+
+    font-size: 1rem;
+    color: #fff;
+  }
+}
+
 .social-networks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1543,7 +1574,6 @@ i {
   -ms-flex-pack: distribute;
   justify-content: space-around;
 
-  /* margin-top: 20px; */
   padding-left: 0;
 }
 
@@ -1593,7 +1623,7 @@ i {
 
 @media (max-width: 436px) {
   .social-networks {
-    margin-top: 30px;
+    margin-top: 17px;
   }
 }
 
