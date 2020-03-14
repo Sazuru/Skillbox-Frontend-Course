@@ -1579,13 +1579,19 @@ i {
 .social-networks__item {
   list-style-type: none;
   padding: 0px;
+  opacity: 0.8;
+}
+
+.social-networks__item:hover {
+  opacity: 1;
 }
 
 .social-networks__link {
-  margin: 0px;
   display: block;
+  margin: 0px;
   width: 100%;
   height: 100%;
+  opacity: 0.8;
 }
 
 .social-icon {
