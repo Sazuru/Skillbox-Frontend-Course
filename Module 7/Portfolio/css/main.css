@@ -531,18 +531,23 @@ p {
 
 @media (min-width: 1400px) {
   .main-about {
-    background-position-x: 1080px;
+    background-position-x: 800px;
     background-position-y: 72px;
-    background-size: 45%;
+    background-size: 60%;
   }
 }
 
 @media (max-width: 1400px) {
   .main-about {
-    background-position-x: 846px;
+    background-position-x: 700px;
     background-size: 66%;
   }
+
+  .main-about__photo {
+    margin-right: 20px;
+  }
 }
+
 @media (max-width: 1250px) {
   .main-about {
     background-position-x: 600px;
@@ -666,6 +671,7 @@ p {
     font-size: 45px;
   }
   .flat-elements-bottom .bottom-2 {
+    display: none;
     -webkit-transform: translate(699px, 5px) rotate(-20deg);
     -ms-transform: translate(699px, 5px) rotate(-20deg);
     transform: translate(699px, 5px) rotate(-20deg);
@@ -678,6 +684,7 @@ p {
     font-size: 37px;
   }
   .flat-elements-bottom .bottom-4 {
+    display: none;
     -webkit-transform: translate(808px, 185px) rotate(-20deg);
     -ms-transform: translate(808px, 185px) rotate(-20deg);
     transform: translate(808px, 185px) rotate(-20deg);
@@ -705,15 +712,15 @@ p {
     font-size: 50px;
   }
   .flat-elements-top .top-3 {
-    -webkit-transform: translate(-582px, 559px) rotate(-23deg);
-    -ms-transform: translate(-582px, 559px) rotate(-23deg);
-    transform: translate(-582px, 559px) rotate(-23deg);
+    -webkit-transform: translate(-582px, 515px) rotate(-23deg);
+    -ms-transform: translate(-582px, 515px) rotate(-23deg);
+    transform: translate(-582px, 515px) rotate(-23deg);
     font-size: 38px;
   }
   .flat-elements-top .top-4 {
-    -webkit-transform: translate(-13px, 427px) rotate(21deg);
-    -ms-transform: translate(-13px, 427px) rotate(21deg);
-    transform: translate(-13px, 427px) rotate(21deg);
+    -webkit-transform: translate(-113px, 427px) rotate(21deg);
+    -ms-transform: translate(-113px, 427px) rotate(21deg);
+    transform: translate(-113px, 427px) rotate(21deg);
     font-size: 40px;
   }
   .flat-elements-top .top-5 {
@@ -735,9 +742,9 @@ p {
     font-size: 30px;
   }
   .flat-elements-bottom .bottom-3 {
-    -webkit-transform: translate(463px, 229px) rotate(20deg);
-    -ms-transform: translate(463px, 229px) rotate(20deg);
-    transform: translate(463px, 229px) rotate(20deg);
+    -webkit-transform: translate(445px, 229px) rotate(20deg);
+    -ms-transform: translate(445px, 229px) rotate(20deg);
+    transform: translate(445px, 229px) rotate(20deg);
     font-size: 37px;
   }
   .flat-elements-bottom .bottom-4 {
@@ -762,9 +769,9 @@ p {
     font-size: 50px;
   }
   .flat-elements-top .top-2 {
-    -webkit-transform: translate(-453px, 518px) rotate(16deg);
-    -ms-transform: translate(-453px, 518px) rotate(16deg);
-    transform: translate(-453px, 518px) rotate(16deg);
+    -webkit-transform: translate(-453px, 450px) rotate(16deg);
+    -ms-transform: translate(-453px, 450px) rotate(16deg);
+    transform: translate(-453px, 450px) rotate(16deg);
     font-size: 53px;
   }
   .flat-elements-top .top-3 {
@@ -811,7 +818,7 @@ p {
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 960px) {
   .flat-elements-top .top-1 {
     -webkit-transform: translate(-400px, 20px) rotate(30deg);
     -ms-transform: translate(-400px, 20px) rotate(30deg);
@@ -819,9 +826,9 @@ p {
     font-size: 30px;
   }
   .flat-elements-top .top-2 {
-    -webkit-transform: translate(-350px, 300px) rotate(20deg);
-    -ms-transform: translate(-350px, 300px) rotate(20deg);
-    transform: translate(-350px, 300px) rotate(20deg);
+    -webkit-transform: translate(-350px, 350px) rotate(20deg);
+    -ms-transform: translate(-350px, 350px) rotate(20deg);
+    transform: translate(-350px, 350px) rotate(20deg);
     font-size: 40px;
   }
   .flat-elements-top .top-3 {
@@ -837,9 +844,9 @@ p {
     font-size: 30px;
   }
   .flat-elements-top .top-5 {
-    -webkit-transform: translate(-200px, 300px) rotate(-20deg);
-    -ms-transform: translate(-200px, 300px) rotate(-20deg);
-    transform: translate(-200px, 300px) rotate(-20deg);
+    -webkit-transform: translate(-200px, 370px) rotate(-20deg);
+    -ms-transform: translate(-200px, 370px) rotate(-20deg);
+    transform: translate(-200px, 370px) rotate(-20deg);
     font-size: 30px;
   }
 
@@ -863,40 +870,16 @@ p {
   }
 }
 
-@media (max-width: 600px) {
-  .flat-elements-top .top-1 {
-    -webkit-transform: translate(-180px, 50px) rotate(30deg);
-    -ms-transform: translate(-180px, 50px) rotate(30deg);
-    transform: translate(-180px, 50px) rotate(30deg);
-    font-size: 30px;
-  }
+@media (max-width: 790px) {
   .flat-elements-top .top-2 {
-    -webkit-transform: translate(-200px, 170px) rotate(-20deg);
-    -ms-transform: translate(-200px, 170px) rotate(-20deg);
-    transform: translate(-200px, 170px) rotate(-20deg);
-    font-size: 30px;
-  }
-  .flat-elements-top .top-3 {
-    -webkit-transform: translate(20px, 0px) rotate(-10deg);
-    -ms-transform: translate(20px, 0px) rotate(-10deg);
-    transform: translate(20px, 0px) rotate(-10deg);
-    font-size: 20px;
-  }
-  .flat-elements-top .top-4 {
-    -webkit-transform: translate(80px, 50px) rotate(30deg);
-    -ms-transform: translate(80px, 50px) rotate(30deg);
-    transform: translate(80px, 50px) rotate(30deg);
-    font-size: 20px;
+    display: none;
   }
   .flat-elements-top .top-5 {
     display: none;
   }
-  .flat-elements-bottom {
-    display: none;
-  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .flat-elements-top .top-1 {
     -webkit-transform: translate(-111px, -9px) rotate(27deg);
     -ms-transform: translate(-111px, -9px) rotate(27deg);
@@ -904,6 +887,7 @@ p {
     font-size: 26px;
   }
   .flat-elements-top .top-2 {
+    display: block;
     -webkit-transform: translate(-123px, 97px) rotate(16deg);
     -ms-transform: translate(-123px, 97px) rotate(16deg);
     transform: translate(-123px, 97px) rotate(16deg);
@@ -921,6 +905,12 @@ p {
     transform: translate(86px, 37px) rotate(22deg);
     font-size: 15px;
   }
+  .flat-elements-bottom {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
 }
 
 .main-about__flex-container {
@@ -1046,9 +1036,14 @@ p {
   filter: drop-shadow(5px 5px 16px rgba(100, 0, 0, 0.4));
 }
 
+@media (max-width: 1400px) {
+  .main-about__photo {
+    margin-right: 20px;
+  }
+}
+
 @media (max-width: 1200px) {
   .main-about__photo {
-    width: 49%;
     margin-right: 20px;
   }
 }
@@ -1061,6 +1056,7 @@ p {
     order: -1;
 
     margin-top: 15px;
+    margin-left: auto;
   }
 }
 
@@ -1390,8 +1386,8 @@ p {
 
 @media (max-width: 1070px) {
   .main-pricing__flex-container {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -1418,6 +1414,9 @@ p {
   margin-top: 30px;
 }
 @media (max-width: 1220px) {
+  .main-pricing__service {
+    font-size: 2.4rem;
+  }
   .main-pricing__service-info {
     font-size: 1.35rem;
   }
