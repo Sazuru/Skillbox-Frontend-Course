@@ -75,6 +75,12 @@ body {
   color: #000000;
 }
 
+h2 {
+  font-size: 3.38rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 img {
   max-width: 100%;
 }
@@ -217,8 +223,6 @@ button {
 
   font-size: 1.13rem;
   color: #fff;
-
-  margin-top: 30px;
 }
 
 .header {
@@ -226,7 +230,7 @@ button {
 
   padding: 0 20px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .header__flex-container {
   display: -webkit-box;
@@ -251,7 +255,7 @@ button {
   cursor: pointer;
 }
 
-.header-menu__list {
+.menu__list {
   max-width: 300px;
   margin: 0;
   padding: 0;
@@ -259,23 +263,23 @@ button {
   list-style-type: none;
 }
 
-.header-menu__item {
+.menu__item {
   position: relative;
   display: inline-block;
 
-  margin-right: 35px;
+  margin-right: 28px;
 }
 
-.header-menu__item:last-child {
+.menu__item:last-child {
   margin-right: 0;
 }
 
-.header-menu__link:hover {
+.menu__link:hover {
   color: #fc557c;
   border-bottom: 1px solid #fc557c;
 }
 
-.header-menu__link:active {
+.menu__link:active {
   color: #fc557cbb;
   border-bottom: 1px solid #fc557cbb;
 }
@@ -284,7 +288,7 @@ button {
   .header {
     padding: 20px 40px 0 40px;
   }
-  .header-menu {
+  .menu {
     display: none;
   }
 
@@ -336,7 +340,7 @@ button {
   font-weight: 700;
   line-height: 2.16;
 
-  margin-right: 30px;
+  margin-right: 22px;
 }
 
 @media (max-width: 600px) {
@@ -348,7 +352,7 @@ button {
   }
 }
 
-.callback-button {
+.header_callback-button {
   width: 210px;
   height: 45px;
 
@@ -363,7 +367,7 @@ button {
   color: #f53f4f;
 }
 
-.callback-button:active {
+.header_callback-button:active {
   background-color: #f53f4f;
   color: #fff;
 }
@@ -406,7 +410,7 @@ button {
     margin-right: 5px;
   }
 
-  .callback-button {
+  .header_callback-button {
     display: none;
   }
   .mobile-callback-button {
@@ -527,7 +531,7 @@ p {
   background-image: url(../img/main-about__photo-background.svg);
   background-repeat: no-repeat;
   background-position-x: 1105px;
-  background-position-y: 15px;
+  background-position-y: 24px;
   background-size: 48%;
 }
 
@@ -957,7 +961,7 @@ p {
 }
 
 .info {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .main-about__name {
@@ -974,9 +978,9 @@ p {
   font-weight: 400;
   line-height: 2.16;
 
-  padding-left: 2px;
-
   color: #8993ad;
+
+  margin-bottom: 60px;
 }
 
 @media (max-width: 1070px) {
@@ -1086,10 +1090,8 @@ p {
   flex-direction: column;
 }
 
-h2 {
-  font-size: 3.38rem;
-  margin-top: 0;
-  margin-bottom: 0;
+.main-skills__name {
+  margin-top: 7px;
 }
 
 .main-skills__list {
@@ -1194,6 +1196,7 @@ h2 {
   width: 100%;
 
   margin-top: 100px;
+  margin-bottom: 70px;
 }
 
 .main-works__examples div {
@@ -1382,7 +1385,7 @@ h2 {
 
   padding: 0 20px;
   margin: 0 auto;
-  margin-top: 65px;
+  margin-top: 58px;
 }
 
 @media (max-width: 1070px) {
@@ -1409,9 +1412,9 @@ h2 {
   align-items: center;
 }
 
-.footer-menu {
+.footer .menu {
   font-size: 1.13rem;
-  line-height: 2.318;
+  line-height: 1.8;
 
   color: rgb(137, 147, 173);
 }
@@ -1423,12 +1426,12 @@ h2 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  .footer-menu {
+  .footer .menu {
     width: 50%;
   }
 }
 
-.footer-menu__list {
+.footer .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1442,10 +1445,6 @@ h2 {
   padding: 0;
 
   list-style-type: none;
-}
-
-.footer-menu__item > a:hover {
-  color: rgb(97, 100, 107);
 }
 
 .footer-contacts > .telephone,
@@ -1462,6 +1461,21 @@ i {
   color: #ff2f96;
 }
 
+.footer_callback-button {
+  width: 248px;
+  height: 45px;
+
+  position: relative;
+  top: -5px;
+
+  border-width: 1px;
+  border-color: rgb(248, 35, 112);
+  border-style: solid;
+
+  background-color: #fff;
+  color: #f53f4f;
+}
+
 .social-networks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1470,6 +1484,9 @@ i {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+
+  margin-top: 16px;
+  margin-right: 23px;
 }
 
 .social-networks__list {
@@ -1478,6 +1495,8 @@ i {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+
+  margin-top: 20px;
   padding-left: 0;
 }
 
@@ -1539,7 +1558,7 @@ i {
   -ms-flex-pack: center;
   justify-content: center;
 
-  margin-top: 100px;
+  margin-top: 65px;
   padding: 40px 0;
 
   color: #fff;
