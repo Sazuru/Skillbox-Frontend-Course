@@ -981,12 +981,27 @@ p {
     height: 68px;
   }
 }
-@media (max-width: 700px) {
+
+@media (max-width: 860px) {
+  .main-about__speciality {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 750px) {
   .main-about__name {
     font-size: 2.81rem;
   }
+}
+
+@media (max-width: 650px) {
   .main-about__speciality {
-    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+
+  .button-buy {
+    width: 280px;
+    height: 55px;
   }
 }
 
@@ -1019,10 +1034,6 @@ p {
   .main-about__speciality {
     text-align: center;
     line-height: 1.5;
-  }
-  .button-buy {
-    width: 280px;
-    height: 55px;
   }
 }
 
