@@ -133,12 +133,35 @@ button {
   width: 80%;
   margin: 10px auto;
   background-color: #fff;
-  border: 1px solid #ff4e2e;
+  border: 1px solid #ccc;
   height: calc(2.25rem + 2px);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.popup__textarea {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  height: calc(5.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  resize: none;
+}
+
+.popup__input:invalid:not(:placeholder-shown),
+.popup__textarea:invalid:not(:placeholder-shown) {
+  border: 1px dashed #ff4e2e;
+}
+
+.popup__input:valid:not(:placeholder-shown),
+.popup__textarea:valid:not(:placeholder-shown) {
+  border: 1px solid black;
 }
 
 .popup__submit {
@@ -155,6 +178,7 @@ button {
   cursor: pointer;
   transition: all 0.2s;
 }
+
 .popup__submit:hover {
   transition: all 0.2s;
   animation: shadow 0.6s linear;
@@ -169,19 +193,6 @@ button {
     box-shadow: 0 0 5px 3px rgba(255, 48, 26, 0),
       0 0 4px 8px rgba(255, 48, 26, 0);
   }
-}
-
-.popup__textarea {
-  width: 80%;
-  margin: 20px auto;
-  background-color: #fff;
-  border: 1px solid #ff4e2e;
-  height: calc(5.25rem + 2px);
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  resize: none;
 }
 
 @media (max-width: 1070px) {

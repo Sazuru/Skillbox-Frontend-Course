@@ -74,9 +74,16 @@ $(document).ready(function() {
     }
   });
 
+  //Маска для телефона
+  $(function() {
+    $('#callback__tel').mask('+7(000)000-00-00', {
+      placeholder: 'Телефон +7(___)___-__-__',
+      clearIfNotMatch: true,
+    });
+  });
+
   //Отправка данных
-  $('.popup__form').submit(function() {
-    //Change
+  $('.popup__form_callback, .popup__form_find-out-more').submit(function() {
     var th = $(this);
     $.ajax({
       type: 'POST',

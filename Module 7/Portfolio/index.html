@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="popup popup_callback">
-      <form class="popup__form">
+      <form class="popup__form popup__form_callback">
         <!-- Hidden Required Fields -->
         <input type="hidden" name="project_name" value="Portfolio" />
         <input type="hidden" name="admin_email" value="sazuru@gmail.com" />
@@ -33,6 +33,7 @@
           maxlength="20"
           placeholder="Имя"
           class="popup__input"
+          required
         />
 
         <input
@@ -42,6 +43,7 @@
           maxlength="11"
           placeholder="Телефон"
           class="popup__input"
+          required
         />
         <button type="submit" id="submit" class="popup__submit">
           Заказать звонок
@@ -50,7 +52,7 @@
       </form>
     </div>
     <div class="popup popup_find-out-more">
-      <form class="popup__form">
+      <form class="popup__form popup__form_find-out-more">
         <!-- Hidden Required Fields -->
         <input type="hidden" name="project_name" value="Portfolio" />
         <input type="hidden" name="admin_email" value="sazuru@gmail.com" />
@@ -66,6 +68,7 @@
           maxlength="20"
           placeholder="Имя"
           class="popup__input"
+          required
         />
         <input
           type="email"
@@ -73,6 +76,7 @@
           id="find-out-more__email"
           placeholder="E-mail"
           class="popup__input"
+          required
         />
         <textarea
           name="question"
@@ -283,15 +287,11 @@
           <div class="footer-contacts">
             <div class="telephone telephone_footer">
               <i class="icofont-ui-call"></i>
-              <a href="tel:+7(921)428-61-06"
-                >+7 (921) 428-61-06</a
-              >
+              <a href="tel:+7(921)428-61-06">+7 (921) 428-61-06</a>
             </div>
             <div class="email">
               <i class="icofont-ui-message"></i>
-              <a href="mailto:sazuru@gmail.com"
-                ></i>sazuru@gmail.com</a
-              >
+              <a href="mailto:sazuru@gmail.com">sazuru@gmail.com</a>
             </div>
           </div>
           <div class="social-networks">
@@ -339,7 +339,7 @@
     </footer>
     <!-- JS and jQuery -->
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
     <!-- slick -->
     <script src="js/slick.min.js"></script>
