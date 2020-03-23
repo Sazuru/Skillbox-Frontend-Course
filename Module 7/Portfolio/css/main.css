@@ -826,6 +826,7 @@ button {
 
 .info {
   margin-top: 170px;
+  margin-bottom: 240px;
 }
 
 .main-about__name {
@@ -851,6 +852,7 @@ button {
 @media (max-width: 1070px) {
   .info {
     margin-top: 100px;
+    margin-bottom: 0px;
   }
 
   .main-about__name {
