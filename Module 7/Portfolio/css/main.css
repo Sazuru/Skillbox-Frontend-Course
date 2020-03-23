@@ -923,7 +923,7 @@ button {
   width: 40%;
   z-index: 2;
 
-  margin-right: 20px;
+  margin-right: -85px;
 
   -webkit-filter: drop-shadow(5px 5px 16px rgba(100, 0, 0, 0.4));
   filter: drop-shadow(5px 5px 16px rgba(100, 0, 0, 0.4));
