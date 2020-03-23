@@ -849,6 +849,10 @@ button {
 }
 
 @media (max-width: 1070px) {
+  .info {
+    margin-top: 100px;
+  }
+
   .main-about__name {
     margin-top: 26px;
     font-size: 3.38rem;
@@ -871,6 +875,10 @@ button {
 }
 
 @media (max-width: 750px) {
+  .info {
+    margin-top: 65px;
+  }
+
   .main-about__name {
     font-size: 2.81rem;
   }
@@ -927,6 +935,11 @@ button {
 
   -webkit-filter: drop-shadow(5px 5px 16px rgba(100, 0, 0, 0.4));
   filter: drop-shadow(5px 5px 16px rgba(100, 0, 0, 0.4));
+}
+@media (max-width: 1500px) {
+  .main-about__photo {
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 600px) {
