@@ -443,7 +443,7 @@ button {
   background-size: 43%;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1750px) {
   .main-about {
     background-position-x: 1107px;
     background-position-y: 26px;
@@ -451,7 +451,7 @@ button {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1750px) {
   .main-about {
     background-position-x: 700px;
     background-size: 66%;
@@ -589,7 +589,7 @@ button {
   }
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1750px) {
   .top-1 {
     -webkit-transform: translate(-830px, 23px) rotate(28deg);
     -ms-transform: translate(-830px, 23px) rotate(28deg);
@@ -609,9 +609,9 @@ button {
     font-size: 38px;
   }
   .top-4 {
-    -webkit-transform: translate(-113px, 427px) rotate(21deg);
-    -ms-transform: translate(-113px, 427px) rotate(21deg);
-    transform: translate(-113px, 427px) rotate(21deg);
+    -webkit-transform: translate(-213px, 427px) rotate(21deg);
+    -ms-transform: translate(-213px, 427px) rotate(21deg);
+    transform: translate(-213px, 427px) rotate(21deg);
     font-size: 40px;
   }
   .top-5 {
@@ -923,22 +923,10 @@ button {
   width: 40%;
   z-index: 2;
 
-  margin-right: -60px;
+  margin-right: 20px;
 
   -webkit-filter: drop-shadow(5px 5px 16px rgba(100, 0, 0, 0.4));
   filter: drop-shadow(5px 5px 16px rgba(100, 0, 0, 0.4));
-}
-
-@media (max-width: 1400px) {
-  .main-about__photo {
-    margin-right: 20px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .main-about__photo {
-    margin-right: 20px;
-  }
 }
 
 @media (max-width: 600px) {
