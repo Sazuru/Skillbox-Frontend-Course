@@ -912,7 +912,7 @@ button {
     -ms-flex-align: center;
     align-items: center;
 
-    margin-bottom: -1px;
+    margin-top: 0px;
 
     background-color: #fff;
   }
@@ -923,7 +923,6 @@ button {
   }
   .main-about__speciality {
     text-align: center;
-    line-height: 1.5;
   }
 }
 
